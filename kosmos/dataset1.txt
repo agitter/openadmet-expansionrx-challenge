@@ -1,0 +1,15 @@
+The dataset contains the following files:
+advancing-predictive-ADMET-modeling.pdf - a PDF with context about the dataset being modeled.
+announcement-2-ExpansionRx-OpenADMET-blind-challenge.pdf - a PDF with context about the dataset being modeled.
+current_leaderboard_2025_12_05.csv - the leaderboard with the rank (1 is best), performance metrics, and optional model details of the current models. When model details are provided, they may be a URL to a research manuscript or a GitHub repository.
+expansion_data_test_blinded.csv - the compounds for which predictions must be made as SMILES strings.
+expansion_data_train.csv - the training dataset with SMILES strings and the ADMET properties.
+expansion_data_train_raw.csv - an alternative format of the training dataset in raw form.
+expansion_tutorial.ipynb - a Jupyter notebook showing exploratory data analysis of the dataset.
+Expansion-CDD-webinar.pdf - a PDF with context about the dataset being modeled.
+kosmos_aw1-run-20251114-1120-repl3.pdf - the report generated from a previous high quality Kosmos analysis of this dataset. Learn from this analysis and improve on it.
+MacDermottOpeskin2025.pdf - a manuscript describing a similar competition to predict ADMET properties. Learn about the dataset and methodology in that competition and use it to guide modeling decisions.
+openadmet_expansion_exploration.py - a Python script showing exploratory data analysis of the dataset.
+OpenADMET-ExpansionRx-Blind-Challenge-about.pdf - a PDF with context about the dataset being modeled.
+OpenADMET-ExpansionRx-Blind-Challenge-FAQ.pdf - a PDF with context about the dataset being modeled.
+openadmet-team-photo.jpg - an image of the competition organizers.
