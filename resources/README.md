@@ -2,7 +2,7 @@
 The original sources of the files in this directory are linked below:
 - Challenge [announcement](https://openadmet.ghost.io/openadmet-expansionrx-blind-challenge/) `announcement-2-ExpansionRx-OpenADMET-blind-challenge.pdf`.
 - Challenge [overview](https://huggingface.co/blog/hugging-science/the-expansionrx-openadmet-blind-challenge) `advancing-predictive-ADMET-modeling.pdf`.
-- Challenge data from [train](https://huggingface.co/datasets/openadmet/openadmet-expansionrx-challenge-train-data/tree/main) and [test](https://huggingface.co/datasets/openadmet/openadmet-expansionrx-challenge-test-data-blinded/tree/main) repos on HuggingFace. CC BY 4.0.
+- Challenge data from [train](https://huggingface.co/datasets/openadmet/openadmet-expansionrx-challenge-train-data/tree/main) and [test](https://huggingface.co/datasets/openadmet/openadmet-expansionrx-challenge-test-data-blinded/tree/main) repos on HuggingFace. CC BY 4.0 Open ADMET Consortium.
 - Challenge [about page](https://huggingface.co/spaces/openadmet/OpenADMET-ExpansionRx-Challenge) `OpenADMET-ExpansionRx-Blind-Challenge-about.pdf`.
 - Challenge [FAQ page](https://huggingface.co/spaces/openadmet/OpenADMET-ExpansionRx-Challenge) `OpenADMET-ExpansionRx-Blind-Challenge-FAQ.pdf`.
 - Challenge [leaderboard](https://huggingface.co/spaces/openadmet/OpenADMET-ExpansionRx-Challenge) snapshot.
