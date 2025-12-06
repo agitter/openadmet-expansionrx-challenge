@@ -8,3 +8,10 @@ Therefore, I decided to learn from the best and build on [Andrew White's existin
 His original prompt is provided as `andrew-white-prompt.txt`.
 I modified it into my prompt.
 The main strategy was to provide additional resources, including Andrew's own Kosmos report, as input datasets.
+
+The first run failed 80% of the way through after running for about 7 hours.
+I'm not sure what happened, the last task was in the "success" state but no more tasks were initialized.
+
+![Kosmost failure](kosmos-failed.png)
+
+I resubmitted another run with the same dataset and prompt.
