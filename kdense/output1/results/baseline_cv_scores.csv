@@ -1,0 +1,10 @@
+property,n_samples,spearman_mean,spearman_std,overall_spearman,ma_rae_mean,ma_rae_std,overall_ma_rae,log_transformed,error
+LogD,5039,0.9106,0.0092,0.9112,0.3739,0.0178,0.3725,False,
+KSOL,5128,0.7290,0.0228,0.7294,0.5298,0.0162,0.5298,False,
+HLM CLint,3759,0.7568,0.0172,0.7584,0.6110,0.0186,0.6092,True,
+MLM CLint,4522,0.7836,0.0208,0.7872,0.6129,0.0265,0.6133,True,
+Caco-2 Permeability Papp A>B,2157,0.7298,0.0339,0.7340,0.6245,0.0336,0.6187,False,
+Caco-2 Permeability Efflux,2161,0.6859,0.0524,0.6910,0.5785,0.0367,0.5644,True,
+MPPB,1302,0.7985,0.0162,0.7991,0.5412,0.0153,0.5398,False,
+MBPB,975,0.8398,0.0221,0.8424,0.5297,0.0182,0.5278,True,
+MGMB,222,0.6799,0.0877,0.7066,0.7671,0.1906,0.7655,False,

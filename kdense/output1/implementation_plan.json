@@ -1,0 +1,106 @@
+{
+  "task": "Baseline LightGBM Model Development",
+  "objective": "Implement featurization and training pipeline for baseline LightGBM model",
+  "date": "2025-12-05",
+  "session_id": "session_20251205_152206_4285cc85e60d",
+  "steps": [
+    {
+      "step": 1,
+      "name": "Environment Setup",
+      "actions": [
+        "Verify UV installation",
+        "Add rdkit-pypi package",
+        "Add lightgbm package",
+        "Run uv sync",
+        "Verify imports",
+        "Document versions"
+      ],
+      "expected_duration_minutes": 3
+    },
+    {
+      "step": 2,
+      "name": "Create Featurization Script",
+      "script": "workflow/05_generate_baseline_features.py",
+      "actions": [
+        "Load train_data.pkl",
+        "Parse SMILES with RDKit",
+        "Generate Morgan fingerprints (2048-bit, radius 2)",
+        "Calculate RDKit 2D descriptors",
+        "Concatenate features",
+        "Handle errors gracefully",
+        "Save to baseline_features_train.pkl"
+      ],
+      "expected_duration_minutes": 10
+    },
+    {
+      "step": 3,
+      "name": "Create Training Script",
+      "script": "workflow/06_train_baseline_model.py",
+      "actions": [
+        "Load features and targets",
+        "Iterate through 9 target properties",
+        "Apply log-transform to skewed properties",
+        "Implement scaffold-based 5-fold CV",
+        "Train LGBMRegressor per fold",
+        "Calculate Spearman and MA-RAE",
+        "Aggregate CV scores",
+        "Save to baseline_cv_scores.csv"
+      ],
+      "expected_duration_minutes": 30
+    },
+    {
+      "step": 4,
+      "name": "Validation and Quality Checks",
+      "actions": [
+        "Load and inspect CV scores",
+        "Calculate average metrics",
+        "Compare to literature benchmarks",
+        "Identify best/worst properties",
+        "Check for anomalies"
+      ],
+      "expected_duration_minutes": 3
+    },
+    {
+      "step": 5,
+      "name": "Documentation and Summary",
+      "actions": [
+        "Update README.md",
+        "Update manifest.json",
+        "Create execution summary"
+      ],
+      "expected_duration_minutes": 5
+    }
+  ],
+  "success_criteria": [
+    "Environment updated with rdkit-pypi and lightgbm",
+    "Featurization script runs without errors",
+    "Training script completes 5-fold CV for all 9 properties",
+    "CV scores file created with valid metrics",
+    "Average Spearman correlation logged",
+    "Mean Spearman >= 0.70"
+  ],
+  "test_plan": [
+    "Verify rdkit and lightgbm import",
+    "Check feature matrix dimensions",
+    "Verify all 9 properties trained",
+    "Check mean Spearman >= 0.70",
+    "Verify output files exist"
+  ],
+  "expected_outputs": [
+    "pyproject.toml (modified)",
+    "workflow/05_generate_baseline_features.py",
+    "workflow/06_train_baseline_model.py",
+    "results/baseline_features_train.pkl",
+    "results/baseline_cv_scores.csv",
+    "README.md (updated)",
+    "manifest.json (updated)"
+  ],
+  "performance_targets": {
+    "mean_spearman": 0.75,
+    "stretch_goal": 0.80,
+    "tier1": 0.85,
+    "tier2": 0.75,
+    "tier3": 0.65,
+    "tier4": 0.60
+  }
+}

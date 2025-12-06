@@ -1,0 +1,81 @@
+{
+  "plan_name": "Diagnose and Resolve Agent Exit Error",
+  "date": "2025-12-05",
+  "objective": "Diagnose and resolve the persistent runtime error that causes the agent to crash at the end of execution",
+  "background": {
+    "scientific_work_status": "complete and correct",
+    "error_pattern": "occurs at very end of execution, after all scripts run successfully",
+    "error_type": "system-level issue, not related to scientific code",
+    "error_message": "Attempted to exit cancel scope in a different task than it was entered in"
+  },
+  "steps": [
+    {
+      "step": 1,
+      "name": "Session Inspection",
+      "status": "complete",
+      "actions": [
+        "Review session directory structure",
+        "Confirm all scientific work is complete",
+        "Identify exit pattern from review logs"
+      ]
+    },
+    {
+      "step": 2,
+      "name": "Create Minimal Completion Script",
+      "status": "pending",
+      "script": "workflow/99_final_cleanup.py",
+      "description": "Minimal script with simple message and flag file creation",
+      "actions": [
+        "Create script with minimal imports",
+        "Add simple print statement",
+        "Create completion flag file",
+        "No complex operations or processing"
+      ]
+    },
+    {
+      "step": 3,
+      "name": "Execute Minimal Script",
+      "status": "pending",
+      "actions": [
+        "Run cleanup script as final action",
+        "Monitor for cancel scope error",
+        "Document whether error occurs"
+      ]
+    },
+    {
+      "step": 4,
+      "name": "Create Completion Flag",
+      "status": "pending",
+      "output": "results/WORKFLOW_COMPLETE.txt",
+      "actions": [
+        "Create flag file with timestamp",
+        "Include completion status",
+        "Prove agent reached final step"
+      ]
+    },
+    {
+      "step": 5,
+      "name": "Document Findings",
+      "status": "pending",
+      "actions": [
+        "Update README.md with diagnosis",
+        "Document error resolution status",
+        "Provide recommendations"
+      ]
+    }
+  ],
+  "success_criteria": [
+    "Agent executes complete run without cancel scope error",
+    "Agent session terminates cleanly with success status",
+    "Flag file WORKFLOW_COMPLETE.txt is created",
+    "Clean execution log free of fatal runtime errors"
+  ],
+  "expected_outputs": [
+    "workflow/99_final_cleanup.py",
+    "results/WORKFLOW_COMPLETE.txt",
+    "Updated README.md with diagnosis results",
+    "Clean execution log"
+  ],
+  "risk_level": "low",
+  "estimated_duration_minutes": 7
+}

@@ -1,0 +1,176 @@
+{
+  "task": "Multi-Task Graph Neural Network for ADMET Prediction",
+  "date": "2025-12-05",
+  "context": "Baseline LightGBM complete (Spearman: 0.7682). Implementing advanced GNN model.",
+  "steps": [
+    {
+      "step": 0,
+      "name": "Pre-Execution Inspection",
+      "status": "completed",
+      "actions": [
+        "Survey session directory structure",
+        "Identify completed baseline work",
+        "Confirm training data available",
+        "Review literature requirements"
+      ]
+    },
+    {
+      "step": 1,
+      "name": "Environment Setup & Package Installation",
+      "status": "pending",
+      "script": null,
+      "actions": [
+        "Verify UV installation",
+        "Add torch, torch_geometric, chemprop to pyproject.toml",
+        "Run uv sync",
+        "Verify imports",
+        "Log package versions"
+      ],
+      "outputs": [
+        "pyproject.toml (updated)",
+        "Installation verification log"
+      ],
+      "critical_notes": [
+        "PyTorch Geometric may have complex dependencies",
+        "Chemprop version 2.0+ preferred for better API"
+      ]
+    },
+    {
+      "step": 2,
+      "name": "GNN Data Preparation",
+      "status": "pending",
+      "script": "workflow/07_prepare_gnn_data.py",
+      "actions": [
+        "Load training data from results/train_data.pkl",
+        "Extract SMILES and 9 target properties",
+        "CRITICAL: Implement Z-score normalization (mean, std for each property)",
+        "Handle missing values (exclude from normalization calculation)",
+        "Save scaler object to results/target_scaler.pkl",
+        "Create CSV: SMILES + 9 normalized targets",
+        "Save as workflow/gnn_train_data_normalized.csv",
+        "Log normalization statistics",
+        "Validate output for infinite/invalid values"
+      ],
+      "outputs": [
+        "workflow/gnn_train_data_normalized.csv",
+        "results/target_scaler.pkl"
+      ],
+      "critical_notes": [
+        "Z-score normalization is ESSENTIAL (from literature review)",
+        "Without normalization: gradient imbalance, poor performance",
+        "Calculate mean/std only on available (non-missing) data"
+      ]
+    },
+    {
+      "step": 3,
+      "name": "GNN Training with Chemprop",
+      "status": "pending",
+      "script": "workflow/08_train_gnn_model.py",
+      "actions": [
+        "Configure Chemprop for multi-task regression",
+        "Set split_type='scaffold_balanced' for fair comparison",
+        "Set metric='spearman'",
+        "Configure 5-fold cross-validation",
+        "Set epochs=30, batch_size=50",
+        "Train model with progress monitoring",
+        "Save outputs to results/chemprop_gnn_model/"
+      ],
+      "outputs": [
+        "results/chemprop_gnn_model/ (directory)",
+        "Model checkpoints (5 folds)",
+        "Cross-validation predictions CSV",
+        "Training logs"
+      ],
+      "critical_notes": [
+        "Use Python API or CLI (both options documented)",
+        "Add frequent progress prints to prevent timeout",
+        "Scaffold splitting ensures fair baseline comparison"
+      ]
+    },
+    {
+      "step": 4,
+      "name": "Results Analysis and Aggregation",
+      "status": "pending",
+      "script": "workflow/09_analyze_gnn_results.py",
+      "actions": [
+        "Parse Chemprop CV predictions file",
+        "Denormalize predictions using target_scaler.pkl",
+        "Calculate Spearman correlation for each property/fold",
+        "Calculate MA-RAE for each property/fold",
+        "Compute mean and std across folds",
+        "Create results/gnn_cv_scores.csv (match baseline format)",
+        "Calculate overall mean Spearman",
+        "Compare with baseline (0.7682)",
+        "Generate performance comparison report"
+      ],
+      "outputs": [
+        "results/gnn_cv_scores.csv",
+        "results/gnn_performance_comparison.txt"
+      ],
+      "critical_notes": [
+        "Must denormalize before calculating metrics",
+        "Match baseline CSV format for consistency"
+      ]
+    },
+    {
+      "step": 5,
+      "name": "Documentation and Summary",
+      "status": "pending",
+      "actions": [
+        "Update README.md with GNN implementation section",
+        "Add performance comparison table",
+        "Update manifest.json with new files",
+        "Document key findings and insights",
+        "Note any issues and resolutions"
+      ],
+      "outputs": [
+        "README.md (updated)",
+        "manifest.json (updated)"
+      ]
+    }
+  ],
+  "success_criteria": [
+    "GNN environment successfully configured",
+    "Data preparation script creates normalized CSV and scaler",
+    "Chemprop training completes without errors",
+    "gnn_cv_scores.csv created with all metrics",
+    "Mean Spearman correlation logged",
+    "Performance compared to baseline (0.7682)"
+  ],
+  "expected_performance": {
+    "baseline_spearman": 0.7682,
+    "gnn_target_spearman": "0.82-0.85",
+    "expected_improvement": "+5-10%",
+    "largest_gains_expected": [
+      "MPPB",
+      "MBPB",
+      "MGMB"
+    ]
+  },
+  "test_plan": [
+    "Verify package imports after installation",
+    "Validate normalized data has no infinite values",
+    "Check scaler object can be loaded and used",
+    "Verify Chemprop training produces expected outputs",
+    "Validate denormalization restores original scale",
+    "Confirm metrics calculations are correct"
+  ],
+  "risks": [
+    {
+      "risk": "PyTorch Geometric installation issues",
+      "mitigation": "Use UV dependency resolution, fallback to pre-built wheels"
+    },
+    {
+      "risk": "Chemprop API changes",
+      "mitigation": "Check version, use CLI fallback if needed"
+    },
+    {
+      "risk": "Training timeout",
+      "mitigation": "Add frequent progress prints, reduce epochs if needed"
+    },
+    {
+      "risk": "GNN underperforms baseline",
+      "mitigation": "Expected for pure GNN - document for future hybrid model"
+    }
+  ]
+}

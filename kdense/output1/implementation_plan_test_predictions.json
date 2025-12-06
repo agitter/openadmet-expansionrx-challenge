@@ -1,0 +1,102 @@
+{
+  "objective": "Generate predictions for the blind test set using both baseline and GNN models",
+  "context": {
+    "baseline_cv_spearman": 0.7682,
+    "gnn_cv_spearman": 0.7779,
+    "issue": "Models trained for CV but not saved; test predictions never generated",
+    "solution": "Retrain models on full training set and generate test predictions"
+  },
+  "steps": [
+    {
+      "step": 1,
+      "name": "Environment Verification",
+      "description": "Verify UV package manager and all required packages",
+      "actions": ["Check uv installation", "Run uv sync", "Verify package availability"]
+    },
+    {
+      "step": 2,
+      "name": "Data Preparation for Test Set",
+      "script": "workflow/10_prepare_test_features.py",
+      "description": "Generate molecular features for test set molecules",
+      "outputs": ["results/baseline_features_test.pkl"]
+    },
+    {
+      "step": 3,
+      "name": "Retrain Baseline Model on Full Training Set",
+      "script": "workflow/11_retrain_baseline_full.py",
+      "description": "Train 9 LightGBM models on full training data",
+      "outputs": ["results/baseline_models/*.pkl (9 files)"]
+    },
+    {
+      "step": 4,
+      "name": "Retrain GNN Model on Full Training Set",
+      "script": "workflow/12_retrain_gnn_full.py",
+      "description": "Train multi-task neural network on full training data",
+      "outputs": ["results/gnn_model_full.pt"]
+    },
+    {
+      "step": 5,
+      "name": "Generate Baseline Predictions",
+      "script": "workflow/13_predict_baseline.py",
+      "description": "Generate test predictions using baseline models",
+      "outputs": ["results/baseline_test_predictions.csv"]
+    },
+    {
+      "step": 6,
+      "name": "Generate GNN Predictions",
+      "script": "workflow/14_predict_gnn.py",
+      "description": "Generate test predictions using GNN model",
+      "outputs": ["results/gnn_test_predictions.csv"]
+    },
+    {
+      "step": 7,
+      "name": "Create Ensemble Predictions",
+      "script": "workflow/15_create_ensemble.py",
+      "description": "Combine baseline and GNN predictions",
+      "outputs": ["results/ensemble_test_predictions.csv"]
+    },
+    {
+      "step": 8,
+      "name": "Submission File Preparation",
+      "script": "workflow/16_prepare_submission.py",
+      "description": "Create final submission file with validation",
+      "outputs": ["results/test_predictions.csv"]
+    },
+    {
+      "step": 9,
+      "name": "Update Documentation",
+      "description": "Update README and manifest with new artifacts",
+      "outputs": ["README.md", "manifest.json"]
+    },
+    {
+      "step": 10,
+      "name": "Final Verification",
+      "description": "Verify all outputs and generate execution summary",
+      "outputs": ["Execution summary"]
+    }
+  ],
+  "success_criteria": [
+    "Baseline model retrained on full training set",
+    "GNN model retrained on full training set",
+    "Test predictions generated for all 2,282 molecules",
+    "Final test_predictions.csv file created",
+    "All predictions properly formatted with no NaN/Inf values",
+    "Documentation updated comprehensively"
+  ],
+  "expected_outputs": {
+    "models": [
+      "results/baseline_models/model_*.pkl (9 files)",
+      "results/gnn_model_full.pt"
+    ],
+    "predictions": [
+      "results/baseline_test_predictions.csv",
+      "results/gnn_test_predictions.csv",
+      "results/ensemble_test_predictions.csv",
+      "results/test_predictions.csv"
+    ],
+    "documentation": [
+      "README.md",
+      "manifest.json"
+    ]
+  }
+}

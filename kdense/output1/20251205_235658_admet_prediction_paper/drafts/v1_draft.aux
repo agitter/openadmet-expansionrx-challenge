@@ -1,0 +1,85 @@
+\relax 
+\providecommand\hyper@newdestlabel[2]{}
+\providecommand\HyField@AuxAddToFields[1]{}
+\providecommand\HyField@AuxAddToCoFields[2]{}
+\citation{Macdern2025ASAP}
+\citation{expansion_context}
+\citation{Macdern2025ASAP}
+\citation{kosmos_discovery1}
+\@writefile{toc}{\contentsline {section}{\numberline {1}Introduction}{1}{section.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.1}Background and Significance}{1}{subsection.1.1}\protected@file@percent }
+\citation{expansion_about}
+\citation{leaderboard}
+\citation{Macdern2025ASAP}
+\citation{Macdern2025ASAP}
+\citation{kosmos_report}
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.2}The OpenADMET-ExpansionRx Challenge}{2}{subsection.1.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.3}Previous Approaches and State-of-the-Art}{2}{subsection.1.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.4}Objectives and Contributions}{3}{subsection.1.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {2}Methods}{3}{section.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1}Dataset Description and Preprocessing}{3}{subsection.2.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.1.1}Data Structure}{3}{subsubsection.2.1.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.1.2}Data Quality Assessment}{4}{subsubsection.2.1.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.1.3}Inter-Property Correlations}{4}{subsubsection.2.1.3}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Strong Inter-Property Correlations in Training Data}}{4}{table.caption.1}\protected@file@percent }
+\providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
+\newlabel{tab:correlations}{{1}{4}{Strong Inter-Property Correlations in Training Data}{table.caption.1}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2}Molecular Featurization}{5}{subsection.2.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.2.1}Chemical Descriptor Generation}{5}{subsubsection.2.2.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.2.2}Target Transformations}{5}{subsubsection.2.2.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3}Model Development}{6}{subsection.2.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.3.1}Baseline: LightGBM with Gradient Boosting}{6}{subsubsection.2.3.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.3.2}Advanced: Multi-Task Neural Network}{6}{subsubsection.2.3.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.4}Validation Strategy}{7}{subsection.2.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.4.1}Scaffold-Based Cross-Validation}{7}{subsubsection.2.4.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.4.2}Performance Metrics}{7}{subsubsection.2.4.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.5}Ensemble Prediction}{8}{subsection.2.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.6}Computational Environment}{8}{subsection.2.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {3}Results}{8}{section.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Exploratory Data Analysis}{8}{subsection.3.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.1.1}Dataset Characteristics}{8}{subsubsection.3.1.1}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces Descriptive Statistics for Nine ADMET Endpoints}}{9}{table.caption.2}\protected@file@percent }
+\newlabel{tab:descriptive_stats}{{2}{9}{Descriptive Statistics for Nine ADMET Endpoints}{table.caption.2}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.1.2}Correlation Structure}{9}{subsubsection.3.1.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Baseline Model Performance (LightGBM)}{9}{subsection.3.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.2.1}Cross-Validation Results}{9}{subsubsection.3.2.1}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces Baseline LightGBM Cross-Validation Performance (5-Fold Scaffold CV)}}{9}{table.caption.4}\protected@file@percent }
+\newlabel{tab:baseline_cv}{{3}{9}{Baseline LightGBM Cross-Validation Performance (5-Fold Scaffold CV)}{table.caption.4}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Inter-property correlation heatmap for nine ADMET endpoints. Strong positive correlations (red) are observed for related tissue binding properties (MBPB-MGMB), while lipophilicity (LogD) shows strong negative correlation with protein binding (MPPB). The correlation structure provides opportunities for multi-task learning to share information across related endpoints.}}{10}{figure.caption.3}\protected@file@percent }
+\newlabel{fig:heatmap}{{1}{10}{Inter-property correlation heatmap for nine ADMET endpoints. Strong positive correlations (red) are observed for related tissue binding properties (MBPB-MGMB), while lipophilicity (LogD) shows strong negative correlation with protein binding (MPPB). The correlation structure provides opportunities for multi-task learning to share information across related endpoints}{figure.caption.3}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.2.2}Performance by Data Availability Tier}{10}{subsubsection.3.2.2}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {4}{\ignorespaces Baseline Performance by Data Availability Tier}}{10}{table.caption.5}\protected@file@percent }
+\newlabel{tab:tier_analysis}{{4}{10}{Baseline Performance by Data Availability Tier}{table.caption.5}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3}Multi-Task Neural Network Performance}{11}{subsection.3.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.3.1}Training Dynamics and Convergence}{11}{subsubsection.3.3.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.3.2}Cross-Validation Results and Comparison to Baseline}{11}{subsubsection.3.3.2}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {5}{\ignorespaces Multi-Task Neural Network Performance and Comparison to Baseline}}{11}{table.caption.6}\protected@file@percent }
+\newlabel{tab:gnn_cv}{{5}{11}{Multi-Task Neural Network Performance and Comparison to Baseline}{table.caption.6}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.3.3}Impact on Sparse Endpoints}{11}{subsubsection.3.3.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.4}Test Set Predictions}{12}{subsection.3.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.4.1}Model Retraining and Ensemble Generation}{12}{subsubsection.3.4.1}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {6}{\ignorespaces Test Set Prediction Summary (Ensemble)}}{12}{table.caption.7}\protected@file@percent }
+\newlabel{tab:test_predictions}{{6}{12}{Test Set Prediction Summary (Ensemble)}{table.caption.7}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.4.2}Prediction Quality Assessment}{12}{subsubsection.3.4.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.5}Comparison to Leaderboard}{12}{subsection.3.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {4}Discussion}{13}{section.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}Key Findings and Implications}{13}{subsection.4.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.1.1}Target Normalization Enables Multi-Task Learning}{13}{subsubsection.4.1.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.1.2}Hybrid Approaches Balance Performance and Interpretability}{13}{subsubsection.4.1.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.1.3}Scaffold-Based Validation Provides Realistic Performance Estimates}{14}{subsubsection.4.1.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}Limitations and Future Directions}{14}{subsection.4.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.2.1}Model Architecture Limitations}{14}{subsubsection.4.2.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.2.2}Ensemble Sophistication}{14}{subsubsection.4.2.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.2.3}Handling of Missing Data}{14}{subsubsection.4.2.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.2.4}Transfer Learning and External Data}{15}{subsubsection.4.2.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3}Broader Impact and Practical Recommendations}{15}{subsection.4.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {5}Conclusions}{15}{section.5}\protected@file@percent }
+\bibstyle{unsrt}
+\bibcite{Macdern2025ASAP}{{1}{}{{}}{{}}}
+\bibcite{expansion_context}{{2}{}{{}}{{}}}
+\bibcite{expansion_about}{{3}{}{{}}{{}}}
+\bibcite{leaderboard}{{4}{}{{}}{{}}}
+\bibcite{kosmos_report}{{5}{}{{}}{{}}}
+\bibcite{kosmos_discovery1}{{6}{}{{}}{{}}}
+\providecommand\NAT@force@numbers{}\NAT@force@numbers
+\gdef \@abspage@last{16}

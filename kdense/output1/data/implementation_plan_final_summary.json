@@ -1,0 +1,65 @@
+{
+  "objective": "Formally conclude the project by creating a final summary report and packaging key deliverables",
+  "context": "Complete ExpansionRx ADMET prediction project - all models trained, predictions generated, methodology review passed",
+  "steps": [
+    {
+      "step_number": 1,
+      "name": "Create Final Project Summary Report",
+      "description": "Generate a clean, professional summary report at results/final_project_summary.md",
+      "inputs": ["README.md", "results/baseline_cv_scores.csv", "results/gnn_cv_scores.csv"],
+      "outputs": ["results/final_project_summary.md"],
+      "validation": [
+        "File exists at expected location",
+        "Contains all required sections",
+        "Performance metrics match source data",
+        "Professional formatting"
+      ]
+    },
+    {
+      "step_number": 2,
+      "name": "Create Compressed Deliverables Archive",
+      "description": "Package 5 key files into final_deliverables.zip",
+      "inputs": [
+        "results/test_predictions.csv",
+        "README.md",
+        "results/baseline_cv_scores.csv",
+        "results/gnn_cv_scores.csv",
+        "results/property_correlation_heatmap.png"
+      ],
+      "outputs": ["final_deliverables.zip"],
+      "validation": [
+        "Archive created successfully",
+        "All 5 files included",
+        "Archive integrity verified",
+        "Reasonable file size"
+      ]
+    },
+    {
+      "step_number": 3,
+      "name": "Verification and Documentation",
+      "description": "Verify outputs and update project documentation",
+      "inputs": ["results/final_project_summary.md", "final_deliverables.zip"],
+      "outputs": ["Updated manifest.json"],
+      "validation": [
+        "Both output files exist",
+        "Archive can be extracted",
+        "Documentation complete"
+      ]
+    }
+  ],
+  "success_criteria": [
+    "final_project_summary.md created with all required sections",
+    "final_deliverables.zip created and valid",
+    "Archive contains all 5 specified files",
+    "All metrics match source data",
+    "Professional formatting and documentation"
+  ],
+  "test_plan": [
+    "Verify final_project_summary.md exists and contains all sections",
+    "Verify final_deliverables.zip exists",
+    "Test archive extraction to verify integrity",
+    "Verify all 5 files are in archive",
+    "Cross-check performance metrics against source CSVs"
+  ],
+  "estimated_time_minutes": 8
+}

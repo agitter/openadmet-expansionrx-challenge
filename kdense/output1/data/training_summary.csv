@@ -1,0 +1,10 @@
+Property,N_Samples,Missing_Pct,Log_Transform,Model_File
+LogD,5039,5.388659406684193,False,model_LogD.pkl
+KSOL,5128,3.717611716109648,False,model_KSOL.pkl
+HLM CLint,3759,29.421704844160722,True,model_HLM_CLint.pkl
+MLM CLint,4522,15.09575666541495,True,model_MLM_CLint.pkl
+Caco-2 Permeability Papp A>B,2157,59.50056327450244,False,model_Caco-2_Permeability_Papp_AtoB.pkl
+Caco-2 Permeability Efflux,2161,59.425460007510324,True,model_Caco-2_Permeability_Efflux.pkl
+MPPB,1302,75.55388659406684,False,model_MPPB.pkl
+MBPB,975,81.69357867067217,True,model_MBPB.pkl
+MGMB,222,95.83176868193767,False,model_MGMB.pkl

@@ -1,0 +1,72 @@
+{
+  "task": "MA-RAE Metric Verification and Documentation",
+  "date": "2025-12-05",
+  "session_id": "session_20251205_152206_4285cc85e60d",
+  "context": "User request indicates MA-RAE is missing, but preliminary inspection shows it's already implemented. Need to verify correctness and completeness.",
+  "steps": [
+    {
+      "step": 1,
+      "name": "Verify Environment Setup",
+      "status": "completed",
+      "description": "UV package manager and dependencies already in place"
+    },
+    {
+      "step": 2,
+      "name": "Inspect Existing MA-RAE Implementation",
+      "status": "pending",
+      "description": "Read training scripts to verify MA-RAE calculation logic",
+      "files_to_read": [
+        "workflow/06_train_baseline_model.py",
+        "workflow/08_train_gnn_model_v2.py"
+      ]
+    },
+    {
+      "step": 3,
+      "name": "Validate MA-RAE Data Quality",
+      "status": "pending",
+      "description": "Verify all MA-RAE values are valid and calculate means",
+      "files_to_read": [
+        "results/baseline_cv_scores.csv",
+        "results/gnn_cv_scores.csv"
+      ]
+    },
+    {
+      "step": 4,
+      "name": "Verify MA-RAE Comparison Analysis",
+      "status": "pending",
+      "description": "Read comparison report and verify completeness",
+      "files_to_read": [
+        "results/gnn_performance_comparison.txt"
+      ]
+    },
+    {
+      "step": 5,
+      "name": "Create Verification Report",
+      "status": "pending",
+      "description": "Document findings and confirm success criteria",
+      "output_files": [
+        "results/ma_rae_verification_report.txt"
+      ]
+    },
+    {
+      "step": 6,
+      "name": "Update Documentation",
+      "status": "pending",
+      "description": "Update README with verification findings",
+      "output_files": [
+        "README.md"
+      ]
+    }
+  ],
+  "success_criteria": [
+    "baseline_cv_scores.csv contains MA-RAE columns",
+    "gnn_cv_scores.csv contains MA-RAE columns",
+    "gnn_performance_comparison.txt includes MA-RAE analysis",
+    "All MA-RAE values are valid (not NaN or Inf)",
+    "Mean MA-RAE is evaluated against target < 0.53"
+  ],
+  "expected_outputs": [
+    "results/ma_rae_verification_report.txt",
+    "Updated README.md with verification findings"
+  ]
+}

@@ -1,0 +1,94 @@
+================================================================================
+GNN vs Baseline Performance Comparison
+================================================================================
+
+OVERALL PERFORMANCE
+--------------------------------------------------------------------------------
+Metric              Baseline LightGBM    GNN Multi-Task       Difference
+--------------------------------------------------------------------------------
+Mean Spearman:        0.7682               0.7779             +0.0096 (+1.26%)
+Mean MA-RAE:          0.5743               0.5481             -0.0262 (-4.55%)
+
+✓ GNN model shows 0.0096 Spearman improvement over baseline
+
+SPEARMAN CORRELATION - PROPERTY-LEVEL COMPARISON
+--------------------------------------------------------------------------------
+Property                                 Baseline        GNN             Diff         Rel %     
+--------------------------------------------------------------------------------
+LogD                                     0.9106±0.009    0.9260±0.005    +0.0154      +1.69%    
+KSOL                                     0.7290±0.023    0.7416±0.006    +0.0126      +1.72%    
+HLM CLint                                0.7568±0.017    0.6803±0.029    -0.0765      -10.11%   
+MLM CLint                                0.7836±0.021    0.7700±0.011    -0.0136      -1.74%    
+Caco-2 Permeability Papp A>B             0.7298±0.034    0.7634±0.012    +0.0336      +4.60%    
+Caco-2 Permeability Efflux               0.6859±0.052    0.6438±0.018    -0.0421      -6.14%    
+MPPB                                     0.7985±0.016    0.8411±0.014    +0.0426      +5.33%    
+MBPB                                     0.8398±0.022    0.8402±0.034    +0.0004      +0.05%    
+MGMB                                     0.6799±0.088    0.7944±0.098    +0.1145      +16.85%   
+--------------------------------------------------------------------------------
+
+MA-RAE - PROPERTY-LEVEL COMPARISON
+--------------------------------------------------------------------------------
+Property                                 Baseline        GNN             Diff         Rel %     
+--------------------------------------------------------------------------------
+LogD                                     0.3739±0.018    0.3439±0.010    -0.0300      -8.02%    
+KSOL                                     0.5298±0.016    0.4853±0.014    -0.0445      -8.41%    
+HLM CLint                                0.6110±0.019    0.6397±0.046    +0.0287      +4.70%    
+MLM CLint                                0.6129±0.026    0.6323±0.021    +0.0194      +3.16%    
+Caco-2 Permeability Papp A>B             0.6245±0.034    0.5976±0.011    -0.0269      -4.31%    
+Caco-2 Permeability Efflux               0.5785±0.037    0.6288±0.030    +0.0503      +8.70%    
+MPPB                                     0.5412±0.015    0.4810±0.046    -0.0602      -11.11%   
+MBPB                                     0.5297±0.018    0.5276±0.029    -0.0021      -0.39%    
+MGMB                                     0.7671±0.191    0.5969±0.121    -0.1702      -22.19%   
+--------------------------------------------------------------------------------
+
+ANALYSIS (Spearman Correlation)
+--------------------------------------------------------------------------------
+Properties improved (6):
+   • LogD                                    : +0.0154 (+1.69%)
+   • KSOL                                    : +0.0126 (+1.72%)
+   • Caco-2 Permeability Papp A>B            : +0.0336 (+4.60%)
+   • MPPB                                    : +0.0426 (+5.33%)
+   • MBPB                                    : +0.0004 (+0.05%)
+   • MGMB                                    : +0.1145 (+16.85%)
+
+Properties declined (3):
+   • HLM CLint                               : -0.0765 (-10.11%)
+   • MLM CLint                               : -0.0136 (-1.74%)
+   • Caco-2 Permeability Efflux              : -0.0421 (-6.14%)
+
+KEY FINDINGS
+--------------------------------------------------------------------------------
+Top 3 Spearman improvements: MGMB, MPPB, Caco-2 Permeability Papp A>B
+Top 3 MA-RAE improvements: MGMB, MPPB, KSOL
+Largest Spearman declines: HLM CLint, Caco-2 Permeability Efflux, MLM CLint
+
+TIER ANALYSIS (by data availability)
+--------------------------------------------------------------------------------
+Tier 1 (>95% complete):
+   Baseline: 0.8198, GNN: 0.8338, Diff: +0.0140 (+1.70%)
+Tier 2 (70-85% complete):
+   Baseline: 0.7702, GNN: nan, Diff: +nan (+nan%)
+Tier 3 (40-60% complete):
+   Baseline: 0.7078, GNN: nan, Diff: +nan (+nan%)
+Tier 4 (<25% complete):
+   Baseline: 0.7727, GNN: 0.8252, Diff: +0.0525 (+6.80%)
+
+INTERPRETATION
+--------------------------------------------------------------------------------
+✓ GNN model shows modest Spearman improvement over baseline
+  Results are comparable, suggesting both approaches are viable.
+
+✓ GNN model shows MA-RAE improvement (lower is better): 0.0262 reduction
+
+TECHNICAL NOTES
+--------------------------------------------------------------------------------
+• Baseline: LightGBM with Morgan FP (2048-bit) + RDKit descriptors (217)
+• GNN: Multi-task neural network with Morgan FP (2048-bit) as input
+• Both use scaffold-based 5-fold cross-validation
+• GNN uses Z-score normalized targets (critical for multi-task learning)
+• Metrics: Spearman correlation (higher is better), MA-RAE (lower is better)
+• MA-RAE = MAE / MAE_baseline (baseline = mean prediction)
+• Note: This GNN uses Morgan fingerprints, not true graph convolutions
+  True GNN (with message passing) could show larger improvements
+
+================================================================================

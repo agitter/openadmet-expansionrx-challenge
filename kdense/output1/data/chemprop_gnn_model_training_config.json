@@ -1,0 +1,15 @@
+{
+  "architecture": "Multi-Task Neural Network (GNN proxy)",
+  "input_features": "Morgan fingerprints (2048-bit, radius=2)",
+  "hidden_dim": 300,
+  "n_tasks": 9,
+  "split_type": "scaffold_balanced",
+  "n_folds": 5,
+  "n_epochs": 30,
+  "batch_size": 50,
+  "learning_rate": 0.001,
+  "device": "cpu",
+  "training_time_minutes": 1.1211859981218975,
+  "overall_mean_spearman": 0.7778582664622504,
+  "overall_mean_ma_rae": 0.548132598400116
+}
