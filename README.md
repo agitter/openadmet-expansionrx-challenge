@@ -21,4 +21,23 @@ agitter
 2025-12-06 17:42:24+00:00
 https://github.com/agitter/openadmet-expansionrx-challenge
 
+### Submission 2: Biomni prompt1
+rank
+user
+MA-RAE
+R2
+Spearman R
+Kendall's Tau
+submission time
+model details
+
+136
+agitter
+0.94 +/- 0.03
+-0.07 +/- 0.06
+0.46 +/- 0.04
+0.33 +/- 0.03
+2025-12-07 03:18:52+00:00
+https://github.com/agitter/openadmet-expansionrx-challenge
+
 (**TODO:** format into a table)
