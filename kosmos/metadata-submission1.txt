@@ -1,0 +1,10 @@
+Username: agitter
+Optional Alias: 
+I want to submit anonymously: No
+Participant Name: Anthony Gitter
+Discord Username: 
+Email: gitter@biostat.wisc.edu
+Affiliation: University of Wisconsin-Madison; Morgridge Institute for Research
+Model Report: https://github.com/agitter/openadmet-expansionrx-challenge
+I want to be included in a future publication detailing the Challenge results: Yes
+Single file with ADMET predictions: kosmos/output2/submission_hybrid_7task_optimized.csv

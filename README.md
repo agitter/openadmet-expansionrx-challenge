@@ -2,7 +2,7 @@
 An AI scientist-based approach to the OpenADMET + ExpansionRx Blind Challenge.
 
 ## Submissions
-### Submission 1: KDense prompt1
+### Submission 1: K-Dense prompt1
 rank
 user
 MA-RAE
@@ -40,4 +40,16 @@ agitter
 2025-12-07 03:18:52+00:00
 https://github.com/agitter/openadmet-expansionrx-challenge
 
+### Submission 3: Kosmos prompt2
+rank
+user
+MA-RAE
+R2
+Spearman R
+Kendall's Tau
+submission time
+model details
+
 (**TODO:** format into a table)
+
+Note that the ranks are not directly comparable because the submissions were made at different times.
