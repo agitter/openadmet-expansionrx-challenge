@@ -50,6 +50,15 @@ Kendall's Tau
 submission time
 model details
 
+42
+agitter
+0.68 +/- 0.03
+0.46 +/- 0.04
+0.70 +/- 0.02
+0.53 +/- 0.02
+2025-12-08 03:39:59+00:00
+https://github.com/agitter/openadmet-expansionrx-challenge
+
 (**TODO:** format into a table)
 
 Note that the ranks are not directly comparable because the submissions were made at different times.
