@@ -59,6 +59,25 @@ agitter
 2025-12-08 03:39:59+00:00
 https://github.com/agitter/openadmet-expansionrx-challenge
 
+### Submission 4: Kosmos prompt1
+rank
+user
+MA-RAE
+R2
+Spearman R
+Kendall's Tau
+submission time
+model details
+
+82
+agitter
+0.74 +/- 0.03
+0.34 +/- 0.05
+0.65 +/- 0.03
+0.47 +/- 0.02
+2025-12-08 18:11:15+00:00
+https://github.com/agitter/openadmet-expansionrx-challenge
+
 (**TODO:** format into a table)
 
 Note that the ranks are not directly comparable because the submissions were made at different times.
