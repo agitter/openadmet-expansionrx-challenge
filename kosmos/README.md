@@ -29,4 +29,14 @@ It was unclear what csv file to use for the competition predictions.
 In the list of artifacts, the last csv file created was `submission_hybrid_7task_optimized.csv` from task 53, so I downloaded that file and used it for the submission.
 However, it wasn't referenced in the final report.
 
+The output from Kosmos `prompt3.txt` is pretty fun.
+This prompt used a different strategy, providing the results from the initial K-Dense, Biomni, and Kosmos runs from this very repository as an input dataset.
+[Task 3](https://platform.edisonscientific.com/kosmos/cfb15844-0095-4bd6-bf8f-e3d5bb1b8ba2/trajectories/2eaef4ed-41ab-438b-8089-9d12b1fad597) shows the analysis of the other AI scientists' models and reports.
+It isn't clear from the report that this analysis actually influenced the rest of the computation though.
+The overall structure of a Kosmos analysis is rigid: four discoveries with a text-based report as the main deliverable.
+That can be restrictive for a prompt like this where the goal is to find the best single modeling strategy and produce the best possible predictions for an input set of compounds.
+The report refers to a "final" model or set of predictions multiple times giving `FINAL FINAL FINAL DRAFT - v20 (1).docx` vibes.
+Based on the report, I selected tasks 47's `predictions_final.csv` for the submission.
+The full output and report are in [`output3`](output3) along with the full set of artifacts are available at [Edison Scientific](https://platform.edisonscientific.com/kosmos/cfb15844-0095-4bd6-bf8f-e3d5bb1b8ba2).
+
 (**TODO:** make the Edison Scientific links public)
