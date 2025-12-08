@@ -1,0 +1,6 @@
+The dataset contains the following files:
+current_leaderboard_2025_12_05.csv - the leaderboard with the rank (1 is best), performance metrics, and optional model details of the current models. When model details are provided, they may be a URL to a research manuscript or a GitHub repository.
+expansion_data_test_blinded.csv - the compounds for which predictions must be made as SMILES strings.
+expansion_data_train.csv - the training dataset with SMILES strings and the ADMET properties.
+expansion_data_train_raw.csv - an alternative format of the training dataset in raw form.
+openadmet-expansionrx-challenge-fc13151.zip - a zip file of a git repository containing files, reports, and code from three previous AI scientists that analyzed this dataset: K-Dense, Biomni, and Kosmos.

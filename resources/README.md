@@ -12,3 +12,4 @@ The original sources of the files in this directory are linked below:
 - The challenge tutorial [notebook](https://github.com/OpenADMET/ExpansionRx-Challenge-Tutorial/blob/cf2dd9d7e6a82a5b6b62d83a14e7538d3d1eae4e/expansion_tutorial.ipynb) `expansion_tutorial.ipynb`.
 - Pat Walters's [exploratory data analysis](https://github.com/PatWalters/practical_cheminformatics_posts/blob/80faa300e80c779edbe08294ab8f2058224c3b55/expansion_data_exploration/openadmet_expansion_exploration.py) script `expansion_data_exploration/openadmet_expansion_exploration.py`. MIT License. Copyright (c) 2021 Patrick Walters.
 - OpenADMET [team photo](https://x.com/srikosuri/status/1986277420132172024) `openadmet-team-photo.jpg`. Getting desperate here. What secrets are reflected in Pat's glasses!?!
+- `openadmet-expansionrx-challenge-fc13151.zip` is a snapshot of this repository after completing and scoring a K-Dense, Biomni, and Kosmos run.
