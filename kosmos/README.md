@@ -14,7 +14,14 @@ I'm not sure what happened, the last task was in the "success" state but no more
 
 ![Kosmost failure](kosmos-failed.png)
 
-I resubmitted another run with the same dataset and prompt, which succeeded.
+Eventually it resumed execution over a day later, to my surprise.
+
+![Kosmost restart](kosmos-restart.png)
+
+I added these outputs in the directory [`output1`](output1), and the artifacts are available at [Edison Scientific](https://platform.edisonscientific.com/kosmos/3126d820-c0d3-4cd1-b0c8-cd60cd4e9989).
+`final_ensemble_transfer_predictions.csv` is from task 38.
+
+I had already resubmitted another run with the same dataset and prompt, which succeeded.
 The primary results are in the directory [`output2`](output2) because there is no easy way to download all of the artifacts.
 The full set of artifacts are available at [Edison Scientific](https://platform.edisonscientific.com/kosmos/368185cd-80ca-4689-9b0d-1f5a1868c20c).
 In general, I have found that Kosmos emphasizes the final human-readable report but makes it difficult to find final output files.
@@ -22,4 +29,4 @@ It was unclear what csv file to use for the competition predictions.
 In the list of artifacts, the last csv file created was `submission_hybrid_7task_optimized.csv` from task 53, so I downloaded that file and used it for the submission.
 However, it wasn't referenced in the final report.
 
-(**TODO:** make the Edison Scientific link public)
+(**TODO:** make the Edison Scientific links public)
