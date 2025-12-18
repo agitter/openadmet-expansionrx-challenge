@@ -1,5 +1,5 @@
 # Potato
-I wanted to try [Tater](https://www.potato.ai/technology), the AI co-scientist from Potato.
+I wanted to try [Tater](https://www.potato.ai/technology), the AI co-scientist from [Potato](https://www.potato.ai/).
 Their logo is undeniably alluring.
 
 ![Potato logo](potato.svg)

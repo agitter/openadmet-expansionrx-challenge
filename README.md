@@ -100,3 +100,18 @@ https://github.com/agitter/openadmet-expansionrx-challenge
 (**TODO:** format into a table)
 
 Note that the ranks are not directly comparable because the submissions were made at different times.
+
+## Other AI co-scientists to try
+- General LLMs
+- https://kiin.bio/: requires a free consultation?
+- https://www.getkepler.ai/: have to book a demo?
+- https://app.superbio.ai/
+- https://www.cambercloud.com/
+- https://www.heurekalabs.co/
+- https://github.com/zaixizhang/STELLA: requires local install?
+- [Google's AI co-scientist](https://research.google/blog/accelerating-scientific-breakthroughs-with-an-ai-co-scientist/): [Trusted Tester Program](https://docs.google.com/forms/d/e/1FAIpQLSdvw_8IPrc8O7ZM8FKF46i8BnOYMeSeyLeBNiuk_yGWIlnxYA/closedform) is closed
+- https://aiscientist.tools/
+- https://github.com/Alistair-Turcan/TusoAI: requires local install?
+- https://github.com/hicai-zju/scitoolagent: requires local install?
+- https://github.com/allenai/codescientist
+- https://pantheonos.stanford.edu/
