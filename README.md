@@ -107,7 +107,6 @@ Note that the ranks are not directly comparable because the submissions were mad
 - https://www.getkepler.ai/: have to book a demo?
 - https://app.superbio.ai/
 - https://www.cambercloud.com/
-- https://www.heurekalabs.co/
 - https://github.com/zaixizhang/STELLA: requires local install?
 - [Google's AI co-scientist](https://research.google/blog/accelerating-scientific-breakthroughs-with-an-ai-co-scientist/): [Trusted Tester Program](https://docs.google.com/forms/d/e/1FAIpQLSdvw_8IPrc8O7ZM8FKF46i8BnOYMeSeyLeBNiuk_yGWIlnxYA/closedform) is closed
 - https://aiscientist.tools/
