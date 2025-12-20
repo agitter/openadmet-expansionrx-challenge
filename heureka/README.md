@@ -23,3 +23,4 @@ I appreciated the job summary report that cleared stated `admet_predictions_fina
 `prompt2.txt` was updated to remove context and datasets related to previous ADMET modeling and exploratory analyses that might biases the modeling decisions.
 I once again created an ARC project to upload files and then started a conversation with my prompt with Extended Reasoning on and Memory off.
 ARC queried "Should I deploy the analysis agent for this comprehensive ADMET modeling task?", and I responded "Yes".
+The results are in the directory [`output2`](output2), and I again compressed `trained_models.pkl` to `trained_models.zip`.

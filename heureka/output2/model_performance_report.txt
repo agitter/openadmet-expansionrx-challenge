@@ -1,0 +1,99 @@
+================================================================================
+OpenADMET ExpansionRx Blind Challenge - Model Performance Report
+================================================================================
+
+Date: 2025-12-20 16:14:29
+
+Training Data: 5326 compounds
+Test Data: 2282 compounds
+
+Featurization: Morgan Fingerprints (radius=2, 2048 bits)
+Model: Random Forest Regressor
+  - n_estimators: 200
+  - max_depth: 30
+  - max_features: sqrt
+
+================================================================================
+Performance by Property
+================================================================================
+
+LogD:
+  Training samples: 5039
+  Cross-validation R²: 0.679 ± 0.028
+  Training R²: 0.811
+  Training RMSE: 0.518
+  Training MAE: 0.399
+  Training time: 27.8s
+
+KSOL:
+  Training samples: 5128
+  Cross-validation R²: 0.510 ± 0.024
+  Training R²: 0.695
+  Training RMSE: 63.487
+  Training MAE: 50.748
+  Training time: 25.5s
+
+HLM CLint:
+  Training samples: 3759
+  Cross-validation R²: 0.306 ± 0.052
+  Training R²: 0.550
+  Training RMSE: 84.493
+  Training MAE: 33.799
+  Training time: 20.8s
+
+MLM CLint:
+  Training samples: 4522
+  Cross-validation R²: 0.376 ± 0.054
+  Training R²: 0.611
+  Training RMSE: 609.403
+  Training MAE: 323.394
+  Training time: 24.1s
+
+Caco-2 Permeability Papp A>B:
+  Training samples: 2157
+  Cross-validation R²: 0.408 ± 0.036
+  Training R²: 0.646
+  Training RMSE: 6.325
+  Training MAE: 4.864
+  Training time: 9.4s
+
+Caco-2 Permeability Efflux:
+  Training samples: 2161
+  Cross-validation R²: 0.290 ± 0.054
+  Training R²: 0.546
+  Training RMSE: 6.359
+  Training MAE: 2.537
+  Training time: 10.6s
+
+MPPB:
+  Training samples: 1302
+  Cross-validation R²: 0.434 ± 0.030
+  Training R²: 0.680
+  Training RMSE: 9.221
+  Training MAE: 6.347
+  Training time: 6.1s
+
+MBPB:
+  Training samples: 975
+  Cross-validation R²: 0.376 ± 0.093
+  Training R²: 0.657
+  Training RMSE: 6.852
+  Training MAE: 3.776
+  Training time: 4.4s
+
+MGMB:
+  Training samples: 222
+  Cross-validation R²: 0.340 ± 0.117
+  Training R²: 0.623
+  Training RMSE: 5.855
+  Training MAE: 3.447
+  Training time: 1.9s
+
+================================================================================
+Key Findings
+================================================================================
+
+✓ 9/9 properties successfully modeled
+✓ Mean CV R² across properties: 0.413
+✓ Median CV R²: 0.376
+✓ Range: [0.290, 0.679]
