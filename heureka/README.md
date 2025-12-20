@@ -11,3 +11,10 @@ Be careful about what data you upload!
 I created an ARC project to upload files in my dataests and then started a conversation with my prompt with Extended Reasoning on and Memory off.
 Note that `prompt1.txt` does not describe all of the attached files. This is because this prompt consumbed 4990/5000 characters, and I could not extend it.
 ARC prepared an analysis plan and queried "Should I deploy the analysis agent for this?", to which I responded "Yes".
+
+ARC submitted a batch job that ran in the background.
+When it finished, my project had a directory with 49 files.
+Attempting to zip and download all 49 files failed with "Error downloading files: Failed to fetch", so I had to download them in small batches, which was cumbersome.
+It included the input datasets, which I did not download.
+The results are in the directory [`output1`](output1).
+The file `train_features.pkl` exceeded GitHub's file size limit of 100 MB so I zipped it to `train_features.zip`.
