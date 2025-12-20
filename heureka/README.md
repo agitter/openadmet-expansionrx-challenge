@@ -18,3 +18,8 @@ Attempting to zip and download all 49 files failed with "Error downloading files
 It included the input datasets, which I did not download.
 The results are in the directory [`output1`](output1).
 The file `train_features.pkl` exceeded GitHub's file size limit of 100 MB so I zipped it to `train_features.zip`.
+I appreciated the job summary report that cleared stated `admet_predictions_final.csv` is the final submission and the model weights files.
+
+`prompt2.txt` was updated to remove context and datasets related to previous ADMET modeling and exploratory analyses that might biases the modeling decisions.
+I once again created an ARC project to upload files and then started a conversation with my prompt with Extended Reasoning on and Memory off.
+ARC queried "Should I deploy the analysis agent for this comprehensive ADMET modeling task?", and I responded "Yes".
