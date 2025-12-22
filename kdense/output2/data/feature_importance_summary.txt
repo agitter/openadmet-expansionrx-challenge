@@ -1,0 +1,248 @@
+================================================================================
+FEATURE IMPORTANCE ANALYSIS REPORT
+ADMET Property Prediction Models
+================================================================================
+
+Analysis Method: XGBoost Feature Importance (Gain Metric)
+The 'gain' metric measures the average improvement in accuracy brought by a feature.
+Higher gain indicates more important features for model predictions.
+
+
+--------------------------------------------------------------------------------
+LogD: Lipophilicity (LogD)
+--------------------------------------------------------------------------------
+
+Total features with importance: 916
+Top 10 features account for 20.8% of total importance
+
+TOP 10 FEATURES:
+Rank   Feature                                  Category        Importance  
+---------------------------------------------------------------------------
+1      fp_1683                                  Fingerprint     161.42      
+2      fp_197                                   Fingerprint     127.80      
+3      fp_561                                   Fingerprint     84.85       
+4      desc_MolLogP                             Descriptor      57.57       
+5      fp_858                                   Fingerprint     47.12       
+6      fp_2015                                  Fingerprint     42.22       
+7      fp_585                                   Fingerprint     41.58       
+8      fp_961                                   Fingerprint     35.68       
+9      fp_1947                                  Fingerprint     34.25       
+10     fp_2004                                  Fingerprint     29.56       
+
+Feature Type Distribution in Top 10:
+  - Morgan Fingerprints: 9
+  - RDKit Descriptors: 1
+
+--------------------------------------------------------------------------------
+KSol: Kinetic Solubility
+--------------------------------------------------------------------------------
+
+Total features with importance: 924
+Top 10 features account for 14.0% of total importance
+
+TOP 10 FEATURES:
+Rank   Feature                                  Category        Importance  
+---------------------------------------------------------------------------
+1      fp_1683                                  Fingerprint     405.37      
+2      fp_1086                                  Fingerprint     177.92      
+3      fp_736                                   Fingerprint     156.55      
+4      fp_1422                                  Fingerprint     139.92      
+5      fp_407                                   Fingerprint     132.62      
+6      fp_1582                                  Fingerprint     101.41      
+7      fp_1753                                  Fingerprint     100.61      
+8      fp_586                                   Fingerprint     97.07       
+9      fp_498                                   Fingerprint     85.49       
+10     fp_1386                                  Fingerprint     82.24       
+
+Feature Type Distribution in Top 10:
+  - Morgan Fingerprints: 10
+  - RDKit Descriptors: 0
+
+--------------------------------------------------------------------------------
+HLM: Human Liver Microsome Clearance
+--------------------------------------------------------------------------------
+
+Total features with importance: 841
+Top 10 features account for 13.6% of total importance
+
+TOP 10 FEATURES:
+Rank   Feature                                  Category        Importance  
+---------------------------------------------------------------------------
+1      fp_1765                                  Fingerprint     97.57       
+2      fp_1998                                  Fingerprint     93.16       
+3      fp_754                                   Fingerprint     86.22       
+4      fp_1482                                  Fingerprint     80.74       
+5      fp_1757                                  Fingerprint     74.72       
+6      fp_1587                                  Fingerprint     67.88       
+7      fp_513                                   Fingerprint     64.15       
+8      fp_1402                                  Fingerprint     57.97       
+9      fp_1586                                  Fingerprint     57.23       
+10     fp_1877                                  Fingerprint     52.40       
+
+Feature Type Distribution in Top 10:
+  - Morgan Fingerprints: 10
+  - RDKit Descriptors: 0
+
+--------------------------------------------------------------------------------
+MLM: Mouse Liver Microsome Clearance
+--------------------------------------------------------------------------------
+
+Total features with importance: 884
+Top 10 features account for 30.6% of total importance
+
+TOP 10 FEATURES:
+Rank   Feature                                  Category        Importance  
+---------------------------------------------------------------------------
+1      fp_1402                                  Fingerprint     1619.46     
+2      fp_488                                   Fingerprint     369.88      
+3      fp_1231                                  Fingerprint     235.80      
+4      fp_1101                                  Fingerprint     124.66      
+5      fp_634                                   Fingerprint     118.70      
+6      fp_486                                   Fingerprint     101.03      
+7      fp_1464                                  Fingerprint     98.99       
+8      fp_1940                                  Fingerprint     98.26       
+9      fp_1745                                  Fingerprint     92.08       
+10     fp_1683                                  Fingerprint     68.14       
+
+Feature Type Distribution in Top 10:
+  - Morgan Fingerprints: 10
+  - RDKit Descriptors: 0
+
+--------------------------------------------------------------------------------
+Papp: Caco-2 Permeability (Papp A>B)
+--------------------------------------------------------------------------------
+
+Total features with importance: 770
+Top 10 features account for 13.3% of total importance
+
+TOP 10 FEATURES:
+Rank   Feature                                  Category        Importance  
+---------------------------------------------------------------------------
+1      fp_1878                                  Fingerprint     34.58       
+2      fp_1702                                  Fingerprint     22.75       
+3      fp_1474                                  Fingerprint     21.69       
+4      fp_1308                                  Fingerprint     21.13       
+5      fp_1423                                  Fingerprint     18.31       
+6      fp_592                                   Fingerprint     18.05       
+7      fp_1208                                  Fingerprint     17.77       
+8      fp_1864                                  Fingerprint     15.09       
+9      fp_651                                   Fingerprint     14.51       
+10     fp_763                                   Fingerprint     13.47       
+
+Feature Type Distribution in Top 10:
+  - Morgan Fingerprints: 10
+  - RDKit Descriptors: 0
+
+--------------------------------------------------------------------------------
+Peff: Caco-2 Efflux Ratio
+--------------------------------------------------------------------------------
+
+Total features with importance: 692
+Top 10 features account for 17.4% of total importance
+
+TOP 10 FEATURES:
+Rank   Feature                                  Category        Importance  
+---------------------------------------------------------------------------
+1      fp_1587                                  Fingerprint     26.41       
+2      fp_668                                   Fingerprint     25.08       
+3      fp_1402                                  Fingerprint     18.79       
+4      fp_1892                                  Fingerprint     16.85       
+5      fp_1411                                  Fingerprint     11.76       
+6      fp_456                                   Fingerprint     10.88       
+7      fp_1517                                  Fingerprint     10.46       
+8      fp_1347                                  Fingerprint     9.88        
+9      desc_TPSA                                Descriptor      9.80        
+10     fp_1308                                  Fingerprint     9.40        
+
+Feature Type Distribution in Top 10:
+  - Morgan Fingerprints: 9
+  - RDKit Descriptors: 1
+
+--------------------------------------------------------------------------------
+MPPB: Mouse Plasma Protein Binding
+--------------------------------------------------------------------------------
+
+Total features with importance: 626
+Top 10 features account for 18.2% of total importance
+
+TOP 10 FEATURES:
+Rank   Feature                                  Category        Importance  
+---------------------------------------------------------------------------
+1      fp_378                                   Fingerprint     9838.66     
+2      fp_519                                   Fingerprint     5651.38     
+3      fp_1825                                  Fingerprint     4622.48     
+4      fp_101                                   Fingerprint     3877.40     
+5      fp_1101                                  Fingerprint     3759.88     
+6      fp_1551                                  Fingerprint     3707.58     
+7      fp_1911                                  Fingerprint     3493.12     
+8      fp_1086                                  Fingerprint     3323.12     
+9      fp_200                                   Fingerprint     2582.49     
+10     fp_743                                   Fingerprint     2557.60     
+
+Feature Type Distribution in Top 10:
+  - Morgan Fingerprints: 10
+  - RDKit Descriptors: 0
+
+--------------------------------------------------------------------------------
+MBPB: Mouse Brain Protein Binding
+--------------------------------------------------------------------------------
+
+Total features with importance: 531
+Top 10 features account for 27.3% of total importance
+
+TOP 10 FEATURES:
+Rank   Feature                                  Category        Importance  
+---------------------------------------------------------------------------
+1      fp_1106                                  Fingerprint     3395.30     
+2      fp_1573                                  Fingerprint     3307.61     
+3      fp_837                                   Fingerprint     2728.56     
+4      fp_454                                   Fingerprint     2704.59     
+5      fp_146                                   Fingerprint     2420.87     
+6      fp_876                                   Fingerprint     2013.77     
+7      fp_237                                   Fingerprint     1708.23     
+8      fp_942                                   Fingerprint     1668.46     
+9      fp_378                                   Fingerprint     1605.73     
+10     fp_1878                                  Fingerprint     1592.18     
+
+Feature Type Distribution in Top 10:
+  - Morgan Fingerprints: 10
+  - RDKit Descriptors: 0
+
+--------------------------------------------------------------------------------
+MGMB: Mouse Gastric Mucosa Binding
+--------------------------------------------------------------------------------
+
+Total features with importance: 263
+Top 10 features account for 62.7% of total importance
+
+TOP 10 FEATURES:
+Rank   Feature                                  Category        Importance  
+---------------------------------------------------------------------------
+1      fp_1062                                  Fingerprint     2000.02     
+2      fp_1617                                  Fingerprint     736.08      
+3      fp_1866                                  Fingerprint     663.87      
+4      desc_MolLogP                             Descriptor      249.44      
+5      fp_852                                   Fingerprint     243.01      
+6      fp_789                                   Fingerprint     233.19      
+7      fp_407                                   Fingerprint     219.11      
+8      fp_1101                                  Fingerprint     188.00      
+9      fp_74                                    Fingerprint     186.38      
+10     fp_450                                   Fingerprint     147.04      
+
+Feature Type Distribution in Top 10:
+  - Morgan Fingerprints: 9
+  - RDKit Descriptors: 1
+
+
+================================================================================
+CROSS-PROPERTY FEATURE ANALYSIS
+================================================================================
+
+Features appearing in Top 10 for 3+ properties:
+
+  fp_1683:
+    Appears in 3 properties: LogD, KSol, MLM
+  fp_1402:
+    Appears in 3 properties: HLM, MLM, Peff
+  fp_1101:
+    Appears in 3 properties: MLM, MPPB, MGMB

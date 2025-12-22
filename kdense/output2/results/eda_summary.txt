@@ -1,0 +1,139 @@
+================================================================================
+OpenADMET ExpansionRx Challenge - EDA Summary
+================================================================================
+
+1. CHALLENGE REQUIREMENTS (from documentation)
+--------------------------------------------------------------------------------
+Evaluation Metrics:
+  - Macro-Averaged Relative Absolute Error (MA-RAE)
+  - Individual metrics available in challenge code repository
+  - Metrics computed per endpoint and macro-averaged
+
+Submission Format:
+  - CSV file with same column names as test set
+  - Must include all 9 target property columns
+  - Can submit zeros for properties not predicted
+  - Column names must match exactly
+
+Data Handling Notes:
+  - Log transforms: add 1 to values before log transform (to handle zeros)
+  - External data allowed for training
+
+2. DATA STRUCTURE
+--------------------------------------------------------------------------------
+Training set: 5326 molecules × 11 columns
+Test set:     2282 molecules × 2 columns
+
+SMILES column: Smiles
+Identifier columns: Molecule Name, Smiles
+
+Target Properties (9):
+  1. LogD
+  2. KSol
+  3. MLM CLint
+  4. HLM CLint
+  5. Caco-2 Permeability Efflux
+  6. Caco-2 Permeability Papp A>B
+  7. MPPB
+  8. MBPB
+  9. MGMB
+
+3. MISSING VALUE ANALYSIS
+--------------------------------------------------------------------------------
+Property                                 Missing    Present    % Missing   
+--------------------------------------------------------------------------------
+LogD                                     287        5039       5.39        
+MLM CLint                                804        4522       15.10       
+HLM CLint                                1567       3759       29.42       
+Caco-2 Permeability Efflux               3165       2161       59.43       
+Caco-2 Permeability Papp A>B             3169       2157       59.50       
+MPPB                                     4024       1302       75.55       
+MBPB                                     4351       975        81.69       
+MGMB                                     5104       222        95.83       
+
+4. DESCRIPTIVE STATISTICS
+--------------------------------------------------------------------------------
+
+LogD:
+  Count:      5039
+  Mean:       2.1117
+  Std Dev:    1.1906
+  Min:        -2.0000
+  25th %ile:  1.4000
+  Median:     2.1000
+  75th %ile:  2.9000
+  Max:        5.2000
+
+MLM CLint:
+  Count:      4522
+  Mean:       560.5327
+  Std Dev:    976.7544
+  Min:        0.0000
+  25th %ile:  62.7000
+  Median:     219.6500
+  75th %ile:  585.3500
+  Max:        10354.8000
+
+HLM CLint:
+  Count:      3759
+  Mean:       52.7812
+  Std Dev:    126.0392
+  Min:        0.0000
+  25th %ile:  5.8000
+  Median:     16.4000
+  75th %ile:  45.1000
+  Max:        2589.9000
+
+Caco-2 Permeability Efflux:
+  Count:      2161
+  Mean:       4.2167
+  Std Dev:    9.4393
+  Min:        0.2600
+  25th %ile:  0.9400
+  Median:     1.3800
+  75th %ile:  2.8900
+  Max:        105.6400
+
+Caco-2 Permeability Papp A>B:
+  Count:      2157
+  Mean:       12.3984
+  Std Dev:    10.6345
+  Min:        0.0000
+  25th %ile:  3.0500
+  Median:     9.8200
+  75th %ile:  19.4500
+  Max:        51.4100
+
+MPPB:
+  Count:      1302
+  Mean:       14.7480
+  Std Dev:    16.3137
+  Min:        0.0000
+  25th %ile:  3.1000
+  Median:     8.9000
+  75th %ile:  20.4000
+  Max:        87.6000
+
+MBPB:
+  Count:      975
+  Mean:       7.6671
+  Std Dev:    11.7117
+  Min:        0.0000
+  25th %ile:  1.1550
+  Median:     3.3800
+  75th %ile:  9.0150
+  Max:        99.2300
+
+MGMB:
+  Count:      222
+  Mean:       7.5324
+  Std Dev:    9.5567
+  Min:        0.0000
+  25th %ile:  1.7900
+  Median:     4.4250
+  75th %ile:  9.7400
+  Max:        61.8000
+
+================================================================================
+END OF SUMMARY
+================================================================================

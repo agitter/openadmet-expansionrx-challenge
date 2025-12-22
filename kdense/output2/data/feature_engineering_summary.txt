@@ -1,0 +1,97 @@
+================================================================================
+Step 2: Molecular Featurization Summary
+================================================================================
+
+OBJECTIVE
+--------------------------------------------------------------------------------
+Generate molecular features from SMILES strings for predictive modeling
+of ADMET properties.
+
+CRITICAL FIX APPLIED
+--------------------------------------------------------------------------------
+Column name standardization to match documentation:
+  - KSOL -> KSol (case sensitivity issue)
+  - SMILES -> Smiles
+
+TARGET PROPERTIES VERIFIED
+--------------------------------------------------------------------------------
+  ✗ Clearance      : MISSING
+  ✗ VDss           : MISSING
+  ✗ fup            : MISSING
+  ✓ KSol           :  5128 values ( 96.3% coverage)
+  ✗ Peff           : MISSING
+  ✗ Permeability   : MISSING
+  ✓ LogD           :  5039 values ( 94.6% coverage)
+  ✗ PPB            : MISSING
+  ✓ MGMB           :   222 values (  4.2% coverage)
+
+KSOL VERIFICATION (Critical Issue from Step 1)
+--------------------------------------------------------------------------------
+Status: ✓ RESOLVED
+Non-null values: 5128 / 5326 (96.3%)
+The KSol column is now visible and accessible after column name fix.
+
+FEATURE ENGINEERING RESULTS
+--------------------------------------------------------------------------------
+Training Data:
+  Total molecules:        5326
+  Failed molecules:       0
+  Success rate:           100.00%
+  Fingerprint features:   2048 (Morgan ECFP6, radius=3)
+  Descriptor features:    7
+  Total features:         2055
+
+Test Data:
+  Total molecules:        2282
+  Failed molecules:       0
+  Success rate:           100.00%
+  Fingerprint features:   2048 (Morgan ECFP6, radius=3)
+  Descriptor features:    7
+  Total features:         2055
+
+FEATURE TYPES GENERATED
+--------------------------------------------------------------------------------
+1. Morgan Fingerprints (ECFP6):
+   - Type: Extended-Connectivity Fingerprints
+   - Radius: 3 (equivalent to ECFP6)
+   - Bits: 2048
+   - Format: Binary features (fp_0, fp_1, ..., fp_2047)
+
+2. Physicochemical Descriptors:
+   - desc_MolWt: Molecular weight (Da)
+   - desc_MolLogP: Octanol-water partition coefficient
+   - desc_TPSA: Topological polar surface area (Å²)
+   - desc_NumHDonors: Number of hydrogen bond donors
+   - desc_NumHAcceptors: Number of hydrogen bond acceptors
+   - desc_NumRotatableBonds: Number of rotatable bonds
+   - desc_RingCount: Number of rings
+
+FAILED MOLECULES DETAILS
+--------------------------------------------------------------------------------
+Training data: No failures ✓
+
+Test data: No failures ✓
+
+OUTPUT FILES
+--------------------------------------------------------------------------------
+Training data:  /app/sandbox/session_20251217_085238_bf1de403d101/data/train_featurized.csv
+  Shape: 5326 rows × 2066 columns
+
+Test data:      /app/sandbox/session_20251217_085238_bf1de403d101/data/test_featurized.csv
+  Shape: 2282 rows × 2057 columns
+
+SUCCESS CRITERIA STATUS
+--------------------------------------------------------------------------------
+✓ data/train_featurized.csv created
+✓ data/test_featurized.csv created
+✓ KSol column present and populated in training data
+✓ Feature set includes 2048 fingerprint bits + 7 descriptors
+✓ results/feature_engineering_summary.txt generated
+
+NEXT STEPS
+--------------------------------------------------------------------------------
+1. Model training using featurized datasets
+2. Handle sparse targets (especially MGMB with 96% missingness)
+3. Apply log(x+1) transformation for appropriate properties
+4. Implement multi-task learning or separate models per target
+5. Evaluate using MA-RAE metric

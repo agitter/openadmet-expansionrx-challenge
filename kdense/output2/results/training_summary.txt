@@ -1,0 +1,93 @@
+================================================================================
+MODEL TRAINING SUMMARY
+================================================================================
+
+Training Date: 2025-12-22 00:20:42
+Total Training Time: 31.8 seconds
+
+Models Trained: 9 ADMET Properties
+Algorithm: XGBoost Regressor
+Hyperparameters: {'n_estimators': 100, 'max_depth': 6, 'learning_rate': 0.1, 'n_jobs': -1, 'random_state': 42, 'tree_method': 'hist'}
+
+================================================================================
+PERFORMANCE METRICS (5-Fold Cross-Validation)
+================================================================================
+
+Target      MA-RAE Mean   MA-RAE Std    Samples
+--------------------------------------------------
+LogD             0.3775       0.0448       5039
+KSol             6.7489       3.8521       5128
+MLM              1.3422       0.2672       4522
+HLM              1.3788       0.2057       3759
+Peff             0.5885       0.0347       2161
+Papp             1.3341       0.2277       2157
+MPPB             1.4984       0.2255       1302
+MBPB             1.9206       0.5901        975
+MGMB             1.6155       1.6731        222
+
+================================================================================
+STATISTICAL SUMMARY
+================================================================================
+Average MA-RAE across all targets: 1.8672
+Best performing target: LogD (MA-RAE = 0.3775)
+Worst performing target: KSol (MA-RAE = 6.7489)
+
+================================================================================
+TARGETS WITH HIGH ERROR RATES (MA-RAE > 0.5)
+================================================================================
+  - KSol: MA-RAE = 6.7489
+    (Log-transformed target, 5128 samples)
+  - MLM: MA-RAE = 1.3422
+    (Log-transformed target, 4522 samples)
+  - HLM: MA-RAE = 1.3788
+    (Log-transformed target, 3759 samples)
+  - Peff: MA-RAE = 0.5885
+    (Log-transformed target, 2161 samples)
+  - Papp: MA-RAE = 1.3341
+    (Log-transformed target, 2157 samples)
+  - MPPB: MA-RAE = 1.4984
+    (Original scale, 1302 samples)
+  - MBPB: MA-RAE = 1.9206
+    (Original scale, 975 samples)
+  - MGMB: MA-RAE = 1.6155
+    (Original scale, 222 samples)
+
+================================================================================
+DATA AVAILABILITY
+================================================================================
+Targets with limited data (< 1000 samples):
+  - MBPB: 975 samples
+  - MGMB: 222 samples
+
+================================================================================
+TARGET TRANSFORMATIONS APPLIED
+================================================================================
+Log-transformed targets (log1p):
+  - KSol
+  - MLM
+  - HLM
+  - Peff
+  - Papp
+
+Original scale targets:
+  - LogD
+  - MPPB
+  - MBPB
+  - MGMB
+
+================================================================================
+OUTPUT FILES
+================================================================================
+Models saved to: /app/sandbox/session_20251217_085238_bf1de403d101/results/models/
+  - model_LogD.json
+  - model_KSol.json
+  - model_MLM.json
+  - model_HLM.json
+  - model_Peff.json
+  - model_Papp.json
+  - model_MPPB.json
+  - model_MBPB.json
+  - model_MGMB.json
+
+Performance metrics: /app/sandbox/session_20251217_085238_bf1de403d101/results/model_performance.csv
+================================================================================

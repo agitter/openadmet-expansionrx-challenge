@@ -26,3 +26,6 @@ It included a file `output1/final_deliverables/results/test_predictions.csv`, wh
 `prompt2.txt` followed the Heurka prompt 2, removing  context and datasets related to previous ADMET modeling and exploratory analyses that might biases the modeling decisions.
 The K-Dense web interface had been modified since my first run to support an effort level, which I set to Pro.
 Once again, the analysis stopped after converting the PDF to markdown files so I made another prompt to "generate an excellent ML model as described above".
+It hung a second time, but "generate an excellent ML model as described above" again launched the analysis this time.
+I generally find it difficult to tell when K-Dense is executing and finished with execution compared to other tools.
+All output is in the directory [`output2`](output2).

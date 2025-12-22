@@ -1,0 +1,118 @@
+================================================================================
+PREDICTION SUMMARY REPORT
+================================================================================
+
+Test Set Size: 2282 molecules
+Number of Properties Predicted: 9
+
+--------------------------------------------------------------------------------
+DESCRIPTIVE STATISTICS FOR EACH PREDICTED PROPERTY
+--------------------------------------------------------------------------------
+
+LogD:
+  Min:    -1.162501
+  Q1:     1.638928
+  Median: 2.110722
+  Mean:   2.099762
+  Q3:     2.658039
+  Max:    4.297927
+  Std:    0.775123
+
+KSOL:
+  Min:    0.000000
+  Q1:     55.509693
+  Median: 91.668655
+  Mean:   100.632118
+  Q3:     144.299759
+  Max:    338.393066
+  Std:    61.587086
+
+MLM CLint:
+  Min:    0.771349
+  Q1:     71.337479
+  Median: 167.787537
+  Mean:   197.343506
+  Q3:     282.989441
+  Max:    1048.476318
+  Std:    158.231995
+
+HLM CLint:
+  Min:    0.872627
+  Q1:     7.168027
+  Median: 14.636636
+  Mean:   20.252752
+  Q3:     26.972939
+  Max:    126.162544
+  Std:    18.318983
+
+Caco-2 Permeability Efflux:
+  Min:    0.778701
+  Q1:     1.761981
+  Median: 2.940407
+  Mean:   4.290202
+  Q3:     5.123056
+  Max:    71.388626
+  Std:    4.315057
+
+Caco-2 Permeability Papp A>B:
+  Min:    0.263212
+  Q1:     2.932694
+  Median: 4.940217
+  Mean:   6.607553
+  Q3:     9.292910
+  Max:    23.708031
+  Std:    4.826771
+
+MPPB:
+  Min:    0.000000
+  Q1:     8.785786
+  Median: 13.742467
+  Mean:   15.985598
+  Q3:     21.109507
+  Max:    70.269196
+  Std:    10.121310
+
+MBPB:
+  Min:    0.000000
+  Q1:     2.461042
+  Median: 5.362156
+  Mean:   6.597247
+  Q3:     8.791384
+  Max:    53.325813
+  Std:    5.771933
+
+MGMB:
+  Min:    0.000000
+  Q1:     3.869860
+  Median: 6.658570
+  Mean:   9.244522
+  Q3:     10.369951
+  Max:    55.547050
+  Std:    9.460572
+
+================================================================================
+VERIFICATION CHECKS
+================================================================================
+✓ All 2282 test molecules have predictions
+✓ All 9 target properties predicted
+✓ Column names match training data format
+✓ No missing values in predictions
+✓ No infinite values in predictions
+
+Physical Constraints:
+  LogD: 28 negative values (allowed)
+  KSOL: All non-negative ✓
+  MLM CLint: All non-negative ✓
+  HLM CLint: All non-negative ✓
+  Caco-2 Permeability Efflux: All non-negative ✓
+  Caco-2 Permeability Papp A>B: All non-negative ✓
+  MPPB: All non-negative ✓
+  MBPB: All non-negative ✓
+  MGMB: All non-negative ✓
+  MPPB: All ≤ 100% ✓
+  MBPB: All ≤ 100% ✓
+  MGMB: All ≤ 100% ✓
+
+================================================================================
+PREDICTION GENERATION COMPLETE
+================================================================================

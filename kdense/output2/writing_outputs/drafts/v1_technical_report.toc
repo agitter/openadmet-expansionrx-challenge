@@ -1,0 +1,44 @@
+\contentsline {section}{\numberline {1}Executive Summary}{2}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Project Overview}{2}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}Key Achievements}{2}{subsection.1.2}%
+\contentsline {section}{\numberline {2}Methodology}{2}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Machine Learning Pipeline Overview}{2}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Data Curation}{3}{subsection.2.2}%
+\contentsline {subsubsection}{\numberline {2.2.1}Dataset Structure}{3}{subsubsection.2.2.1}%
+\contentsline {subsubsection}{\numberline {2.2.2}Missing Value Analysis}{3}{subsubsection.2.2.2}%
+\contentsline {subsection}{\numberline {2.3}Molecular Featurization}{4}{subsection.2.3}%
+\contentsline {subsubsection}{\numberline {2.3.1}Morgan Fingerprints (ECFP6)}{4}{subsubsection.2.3.1}%
+\contentsline {subsubsection}{\numberline {2.3.2}RDKit Physicochemical Descriptors}{5}{subsubsection.2.3.2}%
+\contentsline {subsection}{\numberline {2.4}Predictive Modeling}{5}{subsection.2.4}%
+\contentsline {subsubsection}{\numberline {2.4.1}Algorithm Selection}{5}{subsubsection.2.4.1}%
+\contentsline {subsubsection}{\numberline {2.4.2}Model Architecture}{5}{subsubsection.2.4.2}%
+\contentsline {subsubsection}{\numberline {2.4.3}Hyperparameters}{5}{subsubsection.2.4.3}%
+\contentsline {subsubsection}{\numberline {2.4.4}Target Transformations}{6}{subsubsection.2.4.4}%
+\contentsline {subsubsection}{\numberline {2.4.5}Validation Strategy}{6}{subsubsection.2.4.5}%
+\contentsline {section}{\numberline {3}Results}{6}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Model Performance}{6}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Performance Analysis}{7}{subsection.3.2}%
+\contentsline {subsubsection}{\numberline {3.2.1}Best Performing Properties}{7}{subsubsection.3.2.1}%
+\contentsline {subsubsection}{\numberline {3.2.2}Challenging Properties}{7}{subsubsection.3.2.2}%
+\contentsline {subsubsection}{\numberline {3.2.3}Sample Size Effect}{7}{subsubsection.3.2.3}%
+\contentsline {subsection}{\numberline {3.3}Feature Importance Analysis}{8}{subsection.3.3}%
+\contentsline {subsubsection}{\numberline {3.3.1}Top Features by Property}{8}{subsubsection.3.3.1}%
+\contentsline {subsubsection}{\numberline {3.3.2}Feature Type Distribution}{9}{subsubsection.3.3.2}%
+\contentsline {section}{\numberline {4}Scientific Insights}{10}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Molecular Drivers of ADMET Properties}{10}{subsection.4.1}%
+\contentsline {subsubsection}{\numberline {4.1.1}LogD (Lipophilicity)}{10}{subsubsection.4.1.1}%
+\contentsline {subsubsection}{\numberline {4.1.2}Kinetic Solubility (KSol)}{10}{subsubsection.4.1.2}%
+\contentsline {subsubsection}{\numberline {4.1.3}Liver Microsomal Clearance (HLM/MLM)}{11}{subsubsection.4.1.3}%
+\contentsline {subsubsection}{\numberline {4.1.4}Caco-2 Permeability (Papp, Peff)}{11}{subsubsection.4.1.4}%
+\contentsline {subsubsection}{\numberline {4.1.5}Protein Binding (MPPB, MBPB, MGMB)}{11}{subsubsection.4.1.5}%
+\contentsline {subsection}{\numberline {4.2}Cross-Property Analysis}{11}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Implications for Medicinal Chemistry}{11}{subsection.4.3}%
+\contentsline {section}{\numberline {5}Test Set Predictions}{12}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Prediction Statistics}{12}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Physical Constraint Validation}{12}{subsection.5.2}%
+\contentsline {subsection}{\numberline {5.3}Data Integrity}{13}{subsection.5.3}%
+\contentsline {section}{\numberline {6}Conclusion}{13}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Summary}{13}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.2}Limitations}{13}{subsection.6.2}%
+\contentsline {subsection}{\numberline {6.3}Future Directions}{14}{subsection.6.3}%
+\contentsline {section}{\numberline {7}Reproducibility}{14}{section.7}%

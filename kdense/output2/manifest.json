@@ -1,0 +1,238 @@
+{
+  "session_dir": "/app/sandbox/session_20251217_085238_bf1de403d101",
+  "created": "1766361928.298199",
+  "current_step": "Step 5: Feature Importance Analysis & Final Reporting",
+  "status": "completed",
+  "outputs": [
+    {
+      "type": "script",
+      "path": "/app/sandbox/session_20251217_085238_bf1de403d101/workflow/01_eda_analysis.py",
+      "description": "Exploratory Data Analysis script - loads data, computes statistics, generates summary"
+    },
+    {
+      "type": "report",
+      "path": "/app/sandbox/session_20251217_085238_bf1de403d101/results/eda_summary.txt",
+      "description": "Comprehensive EDA summary including challenge requirements, data structure, missing values, and descriptive statistics"
+    },
+    {
+      "type": "script",
+      "path": "/app/sandbox/session_20251217_085238_bf1de403d101/workflow/02_feature_engineering.py",
+      "description": "Feature engineering pipeline - generates Morgan fingerprints and physicochemical descriptors from SMILES"
+    },
+    {
+      "type": "data",
+      "path": "/app/sandbox/session_20251217_085238_bf1de403d101/data/train_featurized.csv",
+      "description": "Training data with molecular features (5,326 rows × 2,066 columns: 2,048 fingerprints + 7 descriptors + original columns)"
+    },
+    {
+      "type": "data",
+      "path": "/app/sandbox/session_20251217_085238_bf1de403d101/data/test_featurized.csv",
+      "description": "Test data with molecular features (2,282 rows × 2,057 columns: 2,048 fingerprints + 7 descriptors + original columns)"
+    },
+    {
+      "type": "report",
+      "path": "/app/sandbox/session_20251217_085238_bf1de403d101/results/feature_engineering_summary.txt",
+      "description": "Feature engineering summary including column name fixes, feature types, success rates, and next steps"
+    },
+    {
+      "type": "script",
+      "path": "/app/sandbox/session_20251217_085238_bf1de403d101/workflow/03_model_training.py",
+      "description": "XGBoost model training pipeline - trains 9 regression models with 5-fold CV and appropriate transformations"
+    },
+    {
+      "type": "model",
+      "path": "/app/sandbox/session_20251217_085238_bf1de403d101/results/models/model_LogD.json",
+      "description": "XGBoost model for LogD prediction (CV MA-RAE: 0.38)"
+    },
+    {
+      "type": "model",
+      "path": "/app/sandbox/session_20251217_085238_bf1de403d101/results/models/model_KSol.json",
+      "description": "XGBoost model for KSol prediction (CV MA-RAE: 6.75)"
+    },
+    {
+      "type": "model",
+      "path": "/app/sandbox/session_20251217_085238_bf1de403d101/results/models/model_MLM.json",
+      "description": "XGBoost model for MLM CLint prediction (CV MA-RAE: 1.34)"
+    },
+    {
+      "type": "model",
+      "path": "/app/sandbox/session_20251217_085238_bf1de403d101/results/models/model_HLM.json",
+      "description": "XGBoost model for HLM CLint prediction (CV MA-RAE: 1.38)"
+    },
+    {
+      "type": "model",
+      "path": "/app/sandbox/session_20251217_085238_bf1de403d101/results/models/model_Peff.json",
+      "description": "XGBoost model for Caco-2 Efflux prediction (CV MA-RAE: 0.59)"
+    },
+    {
+      "type": "model",
+      "path": "/app/sandbox/session_20251217_085238_bf1de403d101/results/models/model_Papp.json",
+      "description": "XGBoost model for Caco-2 Papp prediction (CV MA-RAE: 1.33)"
+    },
+    {
+      "type": "model",
+      "path": "/app/sandbox/session_20251217_085238_bf1de403d101/results/models/model_MPPB.json",
+      "description": "XGBoost model for MPPB prediction (CV MA-RAE: 1.50)"
+    },
+    {
+      "type": "model",
+      "path": "/app/sandbox/session_20251217_085238_bf1de403d101/results/models/model_MBPB.json",
+      "description": "XGBoost model for MBPB prediction (CV MA-RAE: 1.92)"
+    },
+    {
+      "type": "model",
+      "path": "/app/sandbox/session_20251217_085238_bf1de403d101/results/models/model_MGMB.json",
+      "description": "XGBoost model for MGMB prediction (CV MA-RAE: 1.62)"
+    },
+    {
+      "type": "report",
+      "path": "/app/sandbox/session_20251217_085238_bf1de403d101/results/model_performance.csv",
+      "description": "Model performance metrics table (Target, CV_MA_RAE_Mean, CV_MA_RAE_Std, Training_Samples)"
+    },
+    {
+      "type": "report",
+      "path": "/app/sandbox/session_20251217_085238_bf1de403d101/results/training_summary.txt",
+      "description": "Comprehensive training summary with performance metrics, data availability, and transformations applied"
+    },
+    {
+      "type": "script",
+      "path": "/app/sandbox/session_20251217_085238_bf1de403d101/workflow/04_generate_predictions.py",
+      "description": "Prediction generation pipeline - loads models, applies inverse transformations, enforces physical constraints"
+    },
+    {
+      "type": "submission",
+      "path": "/app/sandbox/session_20251217_085238_bf1de403d101/results/submission.csv",
+      "description": "FINAL SUBMISSION FILE - 2,282 test molecules with predictions for all 9 ADMET properties (348 KB)"
+    },
+    {
+      "type": "report",
+      "path": "/app/sandbox/session_20251217_085238_bf1de403d101/results/prediction_summary.txt",
+      "description": "Prediction summary report with descriptive statistics and verification checks for all properties"
+    },
+    {
+      "type": "script",
+      "path": "/app/sandbox/session_20251217_085238_bf1de403d101/workflow/05_feature_analysis.py",
+      "description": "Feature importance analysis pipeline - extracts and ranks important features for all 9 models using gain metric"
+    },
+    {
+      "type": "report",
+      "path": "/app/sandbox/session_20251217_085238_bf1de403d101/results/feature_importance_summary.txt",
+      "description": "Comprehensive feature importance analysis with top 10 features per model and cross-property insights"
+    },
+    {
+      "type": "report",
+      "path": "/app/sandbox/session_20251217_085238_bf1de403d101/results/FINAL_REPORT.md",
+      "description": "COMPREHENSIVE TECHNICAL REPORT - Complete project documentation including methodology, results, insights, and deliverables"
+    }
+  ],
+  "step_1_summary": {
+    "training_molecules": 5326,
+    "test_molecules": 2282,
+    "target_properties": 9,
+    "key_findings": {
+      "best_coverage": "LogD (94.61% present)",
+      "worst_coverage": "MGMB (4.17% present)",
+      "column_naming": "CSV uses uppercase (SMILES, KSOL) vs documentation lowercase"
+    }
+  },
+  "step_2_summary": {
+    "critical_fix_applied": "Standardized column names: KSOL->KSol, SMILES->Smiles",
+    "ksol_verified": "5,128 non-null values (96.3% coverage) - now accessible",
+    "featurization_method": "Morgan fingerprints (ECFP6, radius=3) + RDKit descriptors",
+    "total_features": 2055,
+    "fingerprint_features": 2048,
+    "descriptor_features": 7,
+    "training_success_rate": "100% (0 failed)",
+    "test_success_rate": "100% (0 failed)",
+    "training_output_shape": "5,326 rows × 2,066 columns",
+    "test_output_shape": "2,282 rows × 2,057 columns"
+  },
+  "step_3_summary": {
+    "algorithm": "XGBoost Regressor",
+    "models_trained": 9,
+    "cross_validation": "5-fold",
+    "hyperparameters": {
+      "n_estimators": 100,
+      "max_depth": 6,
+      "learning_rate": 0.1,
+      "tree_method": "hist"
+    },
+    "transformations": {
+      "log_transformed": ["KSol", "MLM", "HLM", "Peff", "Papp"],
+      "original_scale": ["LogD", "MPPB", "MBPB", "MGMB"]
+    },
+    "average_ma_rae": 1.8672,
+    "best_model": "LogD (MA-RAE: 0.38)",
+    "most_challenging": "KSol (MA-RAE: 6.75)",
+    "training_time_seconds": 31.8,
+    "models_saved": "results/models/ (9 JSON files, 3.5 MB total)"
+  },
+  "step_4_summary": {
+    "test_molecules_predicted": 2282,
+    "properties_predicted": 9,
+    "inverse_transformations_applied": ["KSol", "MLM", "HLM", "Peff", "Papp"],
+    "physical_constraints": {
+      "non_negative_enforcement": "All properties except LogD clipped to >= 0",
+      "protein_binding_cap": "MPPB, MBPB, MGMB capped at 100%",
+      "negative_predictions_clipped": {
+        "KSOL": 2,
+        "MPPB": 2,
+        "MBPB": 17,
+        "MGMB": 13
+      }
+    },
+    "submission_file": {
+      "path": "results/submission.csv",
+      "size_kb": 348,
+      "shape": "2,282 rows × 11 columns",
+      "columns": ["Molecule Name", "SMILES", "LogD", "KSOL", "MLM CLint", "HLM CLint", "Caco-2 Permeability Efflux", "Caco-2 Permeability Papp A>B", "MPPB", "MBPB", "MGMB"]
+    },
+    "verification_checks": {
+      "missing_values": 0,
+      "infinite_values": 0,
+      "column_names_match": true,
+      "physical_constraints_satisfied": true
+    },
+    "prediction_ranges": {
+      "LogD": {"min": -1.16, "max": 4.30, "mean": 2.10},
+      "KSOL": {"min": 0.00, "max": 338.39, "mean": 100.63},
+      "MLM_CLint": {"min": 0.77, "max": 1048.48, "mean": 197.34},
+      "HLM_CLint": {"min": 0.87, "max": 126.16, "mean": 20.25},
+      "Caco2_Efflux": {"min": 0.78, "max": 71.39, "mean": 4.29},
+      "Caco2_Papp": {"min": 0.26, "max": 23.71, "mean": 6.61},
+      "MPPB": {"min": 0.00, "max": 70.27, "mean": 15.99},
+      "MBPB": {"min": 0.00, "max": 53.33, "mean": 6.60},
+      "MGMB": {"min": 0.00, "max": 55.55, "mean": 9.24}
+    },
+    "status": "Submission file ready for upload to OpenADMET platform"
+  },
+  "step_5_summary": {
+    "feature_importance_analysis": {
+      "method": "XGBoost gain metric",
+      "models_analyzed": 9,
+      "fingerprints_in_top_10": "89/90 (98.9%)",
+      "descriptors_in_top_10": "1/90 (1.1% - MolLogP for LogD only)",
+      "cross_property_overlap": "No features appear in 3+ properties - each ADMET property driven by distinct features"
+    },
+    "key_insights": [
+      "LogD primarily driven by structural fingerprints with MolLogP as key descriptor",
+      "Solubility (KSol) entirely driven by specific structural patterns (no descriptors)",
+      "Liver microsome clearance highly structure-specific (all fingerprints)",
+      "Protein binding across all tissues structure-driven (no descriptors)",
+      "Each ADMET property responds to different molecular features - supports independent model strategy"
+    ],
+    "final_report_sections": [
+      "Executive Summary - Project overview and submission status",
+      "Methodology - Data curation, featurization, modeling approach",
+      "Model Performance - Cross-validation MA-RAE scores table",
+      "Scientific Insights - Feature importance analysis and molecular drivers",
+      "Test Predictions - Statistics and constraint validation",
+      "Deliverables - Complete file inventory"
+    ],
+    "outputs_created": [
+      "workflow/05_feature_analysis.py",
+      "results/feature_importance_summary.txt (detailed analysis for all 9 models)",
+      "results/FINAL_REPORT.md (comprehensive technical report)"
+    ]
+  }
+}
