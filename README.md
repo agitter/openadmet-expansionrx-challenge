@@ -117,6 +117,26 @@ agitter
 2025-12-20 15:45:44+00:00
 https://github.com/agitter/openadmet-expansionrx-challenge
 
+### Submission 7: Heureka prompt2
+rank
+user
+MA-RAE
+R2
+Spearman R
+Kendall's Tau
+submission time
+model details
+
+196
+agitter
+
+0.93 +/- 0.03
+-0.03 +/- 0.05
+0.47 +/- 0.04
+0.33 +/- 0.03
+2025-12-21 23:53:27+00:00
+https://github.com/agitter/openadmet-expansionrx-challenge
+
 (**TODO:** format into a table)
 
 Note that the ranks are not directly comparable because the submissions were made at different times.
