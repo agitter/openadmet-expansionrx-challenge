@@ -7,4 +7,4 @@ Email: gitter@biostat.wisc.edu
 Affiliation: University of Wisconsin-Madison; Morgridge Institute for Research
 Model Report: https://github.com/agitter/openadmet-expansionrx-challenge
 I want to be included in a future publication detailing the Challenge results: Yes
-Single file with ADMET predictions: biomni/output1/admet_predictions.csv
+Single file with ADMET predictions: biomni/output2/expansion_data_predictions_final.csv

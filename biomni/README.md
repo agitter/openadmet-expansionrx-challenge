@@ -7,3 +7,5 @@ The second Biomni prompt was the same as the second KDense prompt, modified to u
 I ran with the default Claude-4.5-Sonnet model.
 One annoying aspect of Biomni's web interface is that you cannot copy and paste long input prompts.
 Long inputs are treated as attachments, so you have to break up the input into chunks of a few sentences and paste them in bit-by-bit.
+You also cannot download the logs and file outputs without refreshing the page and reloading the past session.
+All output from this initial prompt `prompt2.txt` is in the directory [`output2`](output2).
