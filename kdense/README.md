@@ -22,3 +22,7 @@ All output from this initial prompt is in the directory [`output1`](output1).
 I again liked the organization of the output and found it fairly intuitive.
 I extracted `final_deliverables.zip` within that directory.
 It included a file `output1/final_deliverables/results/test_predictions.csv`, which was convenient and could be submitted directly to the competition.
+
+`prompt2.txt` followed the Heurka prompt 2, removing  context and datasets related to previous ADMET modeling and exploratory analyses that might biases the modeling decisions.
+The K-Dense web interface had been modified since my first run to support an effort level, which I set to Pro.
+Once again, the analysis stopped after converting the PDF to markdown files so I made another prompt to "generate an excellent ML model as described above".
