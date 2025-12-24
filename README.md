@@ -135,7 +135,7 @@ agitter
 2025-12-21 23:53:27+00:00
 https://github.com/agitter/openadmet-expansionrx-challenge
 
-### Submission 8: Biomni prompt2
+### Submission 8: K-Dense prompt2
 rank
 user
 MA-RAE
