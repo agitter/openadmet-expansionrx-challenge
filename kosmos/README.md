@@ -39,4 +39,10 @@ The report refers to a "final" model or set of predictions multiple times giving
 Based on the report, I selected tasks 47's `predictions_final.csv` for the submission.
 The full output and report are in [`output3`](output3) along with the full set of artifacts are available at [Edison Scientific](https://platform.edisonscientific.com/kosmos/cfb15844-0095-4bd6-bf8f-e3d5bb1b8ba2).
 
+`prompt4.txt` was the same as the second KDense prompt, modified to use the Kosmos compute resources and split the dataset description into a separate file.
+The Kosmos interface had changed subtly for this run.
+For instance, I could no longer name the query when launching it in the same way as before.
+I do not know if anything in the back end changed.
+
+
 (**TODO:** make the Edison Scientific links public)

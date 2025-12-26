@@ -1,0 +1,9 @@
+The dataset contains the following files:
+advancing-predictive-ADMET-modeling.pdf - a PDF with context about the dataset being modeled.
+announcement-2-ExpansionRx-OpenADMET-blind-challenge.pdf - a PDF with context about the dataset being modeled.
+expansion_data_test_blinded.csv - the compounds for which predictions must be made as SMILES strings.
+expansion_data_train.csv - the training dataset with SMILES strings and the ADMET properties.
+expansion_data_train_raw.csv - an alternative format of the training dataset in raw form.
+Expansion-CDD-webinar.pdf - a PDF with context about the dataset being modeled.
+OpenADMET-ExpansionRx-Blind-Challenge-about.pdf - a PDF with context about the dataset being modeled.
+OpenADMET-ExpansionRx-Blind-Challenge-FAQ.pdf - a PDF with context about the dataset being modeled.
