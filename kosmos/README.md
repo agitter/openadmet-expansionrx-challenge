@@ -43,6 +43,10 @@ The full output and report are in [`output3`](output3) along with the full set o
 The Kosmos interface had changed subtly for this run.
 For instance, I could no longer name the query when launching it in the same way as before.
 I do not know if anything in the back end changed.
-
+The primary results are in the directory [`output4`](output4).
+Once again, each section of the report contains independent analyses so it is difficult to know which files to search for for the competition submission.
+The stacked ensemble results (discovery 2) looked especially relevant, but that task did not have a csv file with predictions as a file to download, only png images.
+I had to navigate the full output Artifacts searching for available csv files until I found `final_predictions_stacked.csv`, which may not have been the most relevant or correct file.
+The full set of artifacts are available at [Edison Scientific](https://platform.edisonscientific.com/kosmos/93b71758-d473-41e4-9a9c-85a51def7ae6).
 
 (**TODO:** make the Edison Scientific links public)
