@@ -211,8 +211,6 @@ agitter
 2026-01-06 15:24:22+00:00
 https://github.com/agitter/openadmet-expansionrx-challenge
 
-(**TODO:** format into a table)
-
 Note that the ranks are not directly comparable because the submissions were made at different times.
 My final submission, Submission 11, was a resubmission of Kosmos prompt2 because that was the submission with the best performance of the previous 10.
 It reused the metadata from `kosmos/metadata-submission2.txt`.

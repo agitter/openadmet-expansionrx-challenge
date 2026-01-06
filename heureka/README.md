@@ -8,8 +8,8 @@ One thing that caught my attention, besides the license being "solely for your o
 
 Be careful about what data you upload!
 
-I created an ARC project to upload files in my dataests and then started a conversation with my prompt with Extended Reasoning on and Memory off.
-Note that `prompt1.txt` does not describe all of the attached files. This is because this prompt consumbed 4990/5000 characters, and I could not extend it.
+I created an ARC project to upload files in my datasets and then started a conversation with my prompt with Extended Reasoning on and Memory off.
+Note that `prompt1.txt` does not describe all of the attached files. This is because this prompt consumed 4990/5000 characters, and I could not extend it.
 ARC prepared an analysis plan and queried "Should I deploy the analysis agent for this?", to which I responded "Yes".
 
 ARC submitted a batch job that ran in the background.
