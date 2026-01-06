@@ -1,5 +1,5 @@
 | Submission | Model | Prompt | rank | MA-RAE | R2 | Spearman R | Kendall's Tau | submission time | context |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 1 | K-Dense | prompt1 | 80 | 0.73 +/- 0.03 | 0.30 +/- 0.05 | 0.66 +/- 0.03 | 0.49 +/- 0.02 | 2025-12-06 17:42:24+00:00 | Tutorials, leaderboard, AW Kosmos run |
 | 2 | Biomni | prompt1 | 136 | 0.94 +/- 0.03 | -0.07 +/- 0.06 | 0.46 +/- 0.04 | 0.33 +/- 0.03 | 2025-12-07 03:18:52+00:00 | Tutorials, leaderboard, AW Kosmos run |
 | 3 | Kosmos | prompt2 | 42 | 0.68 +/- 0.03 | 0.46 +/- 0.04 | 0.70 +/- 0.02 | 0.53 +/- 0.02 | 2025-12-08 03:39:59+00:00 | Tutorials, leaderboard, AW Kosmos run |
