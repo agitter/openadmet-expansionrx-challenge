@@ -192,9 +192,21 @@ agitter
 2025-12-27 14:04:23+00:00
 https://github.com/agitter/openadmet-expansionrx-challenge
 
+### Submission 11: Kosmos prompt2
+rank
+user
+MA-RAE
+R2
+Spearman R
+Kendall's Tau
+submission time
+model details
+
 (**TODO:** format into a table)
 
 Note that the ranks are not directly comparable because the submissions were made at different times.
+My final submission, Submission 11, was a resubmission of Kosmos prompt2 because that was the submission with the best performance of the previous 10.
+It reused the metadata from `kosmos/metadata-submission2.txt`.
 
 ## Other AI co-scientists to try
 - General LLMs
