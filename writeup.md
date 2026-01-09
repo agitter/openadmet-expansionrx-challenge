@@ -28,6 +28,9 @@ I selected four AI scientists:
 
 These were picked from a non-exhaustive [list of candidates](https://github.com/agitter/openadmet-expansionrx-challenge/tree/main?tab=readme-ov-file#other-ai-co-scientists-to-try) I compiled based on those I already knew about and a [tweet](https://x.com/rkosai/status/1973850436848525409) from the Potato CTO.
 I only considered tools with a web interface that I could sign up for without talking to a sales team and that would provide free trial credits.
+I looked into [Potato](https://www.potato.ai/), but it was not yet available.
+I also ran [Gemini 3 Pro](https://gemini.google.com/).
+Gemini failed to produce predictions, so I excluded it from the results below.
 
 Before I started, I found that Andrew White, Co-Founder and CTO at Edison Scientific that created Kosmos, had already run Kosmos on the  OpenADMET + ExpansionRx Blind Challenge dataset.
 Graciously, he [tweeted](https://x.com/andrewwhite01/status/1989822482011050123) his results and [linked](https://dev.platform.edisonscientific.com/kosmos/8208890b-d46b-402d-b17f-6d69063f9cb1) to his Kosmos output.
