@@ -20,12 +20,52 @@ The new OpenADMET challenge had many attractive properties: the chemical propert
 I initially intended to run a single AI scientist once on the challenge data but eventually expanded this project to running four tools under different settings.
 
 ## Methods
+I selected four AI scientists:
+- [Biomni](https://biomni.stanford.edu/) ([manuscript](https://doi.org/10.1101/2025.05.30.656746))
+- [Heureka](https://www.heurekalabs.co/app/) AI Research Companion (ARC)
+- [K-Dense](https://k-dense.ai/) ([manuscript](https://arxiv.org/abs/2508.07043))
+- [Kosmos](https://platform.edisonscientific.com/) ([manuscript](https://arxiv.org/abs/2511.02824))
+
+These were picked from a non-exhaustive [list of candidates](https://github.com/agitter/openadmet-expansionrx-challenge/tree/main?tab=readme-ov-file#other-ai-co-scientists-to-try) I compiled based on those I already knew about and a [tweet](https://x.com/rkosai/status/1973850436848525409) from the Potato CTO.
+I only considered tools with a web interface that I could sign up for without talking to a sales team and that would provide free trial credits.
+
+Before I started, I found that Andrew White, Co-Founder and CTO at Edison Scientific that created Kosmos, had already run Kosmos on the  OpenADMET + ExpansionRx Blind Challenge dataset.
+Graciously, he [tweeted](https://x.com/andrewwhite01/status/1989822482011050123) his results and [linked](https://dev.platform.edisonscientific.com/kosmos/8208890b-d46b-402d-b17f-6d69063f9cb1) to his Kosmos output.
+Rather than be discouraged by being scooped, I decided to directly build on his results.
+Who knows better how to run an AI scientist than Andrew?
+
+All four tools support uploading files and datasets along with a text prompt.
+For my first batch of files, I included the Kosmos report from Andrew's linked run above that describes machine learning modeling strategies and results.
+I also used his prompt as a base with only minor modifications.
+In addition, I included other files as context: challenge announcements and descriptions as PDFs, the train and test datasets, exploratory Python scripts from the [organizers](https://github.com/OpenADMET/ExpansionRx-Challenge-Tutorial/blob/cf2dd9d7e6a82a5b6b62d83a14e7538d3d1eae4e/expansion_tutorial.ipynb) and [Pat Walters](https://github.com/PatWalters/practical_cheminformatics_posts/blob/80faa300e80c779edbe08294ab8f2058224c3b55/expansion_data_exploration/openadmet_expansion_exploration.py), a snapshot of the challenge leaderboard, the preprint from the previous OpenADMET challenge, and a team photo.
+The details of these files and the full prompts provided to the AI scientists are cataloged in my [GitHub repository](https://github.com/agitter/openadmet-expansionrx-challenge).
+This context is summarized as "Tutorials, leaderboard, AW Kosmos run" in the results below.
+
+After completing the initial K-Dense, Biomni, and Kosmos runs with that style of prompt, I changed strategies.
+I created a zip archive of the entire repository's contents, which included the reports and predictions from those three runs.
+Then, I provided that file to Kosmos along with the train data, test data, and leaderboard snapshot.
+This context is summarized as "Leaderboard, previous outputs from this repo" in the results table.
+
+Finally, I observed that Andrew's Kosmos run was influencing the modeling choices of some of the other AI scientists.
+To determine if they would use different machine learning strategies without that context, I created another set of prompts that provided only the challenge announcements and descriptions along with the train and test datasets.
+This context is referred to as "Dataset and descriptions
+" in the results.
+
+Heureka has length restrictions on the input prompt, so in some cases I was unable to provide and describe all of the files I provided the other models.
+The context in the results table is modified accordingly.
+
+After creating a prompt, my workflow was to run the AI scientist, wait for it to terminate, download relevant outputs, identify the output file with the predictions on the test dataset, upload it manually to the HuggingFace [submission site](https://huggingface.co/spaces/openadmet/OpenADMET-ExpansionRx-Challenge), wait for it to be scored, and copy the scores for that submission into my GitHub repository.
+This iterative process was tedious because some of the AI scientists (i.e. Kosmos) ran for a long time, and the submissions were not scored immediately after upload.
+The submission site also limited how frequently submissions could be uploaded.
+Kosmos made it difficult to find and download the most relevant output file, so I did my best to guess.
+
+After making 10 submissions, I picked the previous submission that scored best and resubmitted it as my final entry.
+Then, I used ChatGPT to generate a simple Python script to create bar graphs visualizing the metrics from my submissions.
 
 ## Results
 The full results of my 11 submissions are below.
-After each submission, I copied the output from the [leaderboard](https://huggingface.co/spaces/openadmet/OpenADMET-ExpansionRx-Challenge) before making the next submission.
 The ranks are not comparable because the number of other strong submissions on the leaderboard changed over time.
-The context column is a summary of the context provided in the prompt and dataset, which is detailed in the models' respective subdirectories in this repository and described in the Methods.
+The context column is a summary of the context provided in the prompt and dataset (Methods).
 Two submissions are duplicates or near duplicates.
 Submissions 3 and 4 used the same prompt.
 Submission 11 is a resubmission of submission 3 to create my final challenge entry.
