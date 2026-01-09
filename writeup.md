@@ -117,3 +117,24 @@ Constructive feedback for:
 - **Kosmos**: The overall structure of a Kosmos analysis is rigid: four discoveries with a text-based report as the main deliverable. That can be restrictive for a project like this where the goal is to find the best single modeling strategy and produce the best possible predictions for an input set of compounds. It is difficult to find and download the best output `.csv` file across the multiple analyses in the report. The report references analysis tasks, but those tasks may not produce an output `.csv` file. I cannot find a way to download all the data artifacts and code generated. There are so many parallel analyses attempted, some of which are dead ends, that it feels hopeless to trace through them to understand in full what modeling was done.
 
 ## Discussion
+So what have we learned from this exercise?
+One of the most valuable takeaways for me personally was understanding the state of the art in AI scientists.
+Reading about these tools doesn't give the same impressions as trying them yourself for some specific task, which I why I emphasized the user experience in a separate section independent of success on the scientific task.
+My [running Kosmos](https://github.com/gitter-lab/adaptyvbio-nipah/tree/main/kosmos) for the [Adaptyv Nipah Binder Competition](https://proteinbase.com/competitions/adaptyv-nipah-competition) was done in a similar spirit.
+
+My assessment of these AI scientists through the competition was quite limited relative to a formal computational methods evaluation.
+I did not check for sensitivity to how the prompt was specified, run with different backend LLMs when that could be selected, assess variability in outputs given the same prompt (with one exception), ablate different aspects of the provided prompt or data, and so forth.
+The results are representative of what a typical scientist should expect from a single typical run with each tool.
+The input may skew more towards the advanced end because it is derived from an expert's prompt who develops these methods.
+Another limitation is that for convenience, I only ran AI scientists that could be accessed through a web interface.
+Some of these same tools and other tools can be run in other settings where I could have given them access to more powerful computing resources, such as more memory and GPUs.
+This could have substantially affected the models they trained and their ability to match top performers on the competition.
+For these reasons, I am not drawing conclusions about one AI scientist being better than another.
+
+In closing, I'm reminded of the [AI effect](https://en.wikipedia.org/wiki/AI_effect), which describes shifting expectations around AI.
+Marvin Minsky has [written](https://web.archive.org/web/20090628081048/http://www.kurzweilai.net/articles/art0100.html?printable=1) about it, but a more apt quote comes from Rodney Brooks in this 2002 [Wired article](https://www.wired.com/2002/03/everywhere/)
+> Every time we figure out a piece of it, it stops being magical; we say, 'Oh, that's just a computation,'
+
+A year ago, the types of AI scientists I tested in this competition didn't exist.
+When I first ran Biomni, I was quite impressed by its combination of planning, code generation, dynamic tool installation, backtracking upon failure, and overall design even if it didn't necessarily produce the end result I had in mind.
+Now the bar has shifted, and I'm asking if these tools can outcompete the best experts in the world.
