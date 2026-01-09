@@ -1,11 +1,27 @@
 # Assessing AI Scientists on the OpenADMET + ExpansionRx Blind Challenge
+Anthony Gitter  
 
 ## Introduction
+A theme of 2025 was the prominence of AI (co-)scientists.
+Scientific agents like [Coscientist](https://doi.org/10.1038/s41586-023-06792-0) and [ChemCrow](https://doi.org/10.1038/s42256-024-00832-8) had been available for a couple of years, but newer AI scientists sought generality by supporting more external tools and executing custom-written code, among other things.
+A major challenge in my opinion is evaluating AI scientists to assess whether and how the field is making progress.
+Retrospective evaluations of predictions on existing datasets are not that convincing.
+Many of these tools used closed large language models (LLMs) or access the internet during execution, so it can be difficult to judge when a model is making new predictions versus reproducing information it has seen before.
+Running the tools on problems where you have personal expertise gives anecdotal feedback about their strengths and weaknesses but is not a formal evaluation.
+Some prospective evaluations have been well-designed, like [Biomni](https://doi.org/10.1101/2025.05.30.656746)'s wet-lab cloning protocol that had a scientist follow the generated protocol and used a base LLM and two experts of varying skill levels as controls.
+
+Community challenges provide an excellent opportunity to assess computational methods, including AI scientists.
+They offer unpublished, held out test data as well as a collection of strong competing methods from experts in the domain.
+I chose the [OpenADMET + ExpansionRx Blind Challenge](https://huggingface.co/spaces/openadmet/OpenADMET-ExpansionRx-Challenge) [announced](https://huggingface.co/blog/hugging-science/the-expansionrx-openadmet-blind-challenge) in October 2025 to assess recent AI scientists.
+"ADMET" refers to Absorption, Distribution, Metabolism, Excretion, and Toxicology chemical properties that are important in drug development.
+I had [previously participated](https://github.com/agitter/asap-polaris-admet-challenge/blob/main/writeup.md) in the [ASAP Discovery x OpenADMET Challenge](https://doi.org/10.26434/chemrxiv-2025-zd9mr-v6) in early 2025 to evaluate whether [TabPFN](https://doi.org/10.1038/s41586-024-08328-6) would work out of the box for this problem (nope).
+The new OpenADMET challenge had many attractive properties: the chemical property prediction task was in scope for most AI scientists, it was run by an experienced team, had test data for nine ADMET endpoints, and allowed multiple submissions throughout the challenge.
+
+I initially intended to run a single AI scientist once on the challenge data but eventually expanded this project to running four tools under different settings.
 
 ## Methods
 
 ## Results
-
 The full results of my 11 submissions are below.
 After each submission, I copied the output from the [leaderboard](https://huggingface.co/spaces/openadmet/OpenADMET-ExpansionRx-Challenge) before making the next submission.
 The ranks are not comparable because the number of other strong submissions on the leaderboard changed over time.
@@ -49,13 +65,13 @@ That context was roughly equivalent to the other informative context I provided 
 After running four different AI scientists, I've accumulated some subjective thoughts about each.
 
 Say (at least) one nice thing about:
-- **Biomni**: It is fairly open and transparent, which I value. The planning and analysis is mostly linear, even when backtracking and updating plans, which makes it possible to attempt to scroll through all the generated code and output to understand what analysis was done.
+- **Biomni**: It is fairly open and transparent, which I value. The planning and analysis is mostly linear, even when backtracking and updating plans, which makes it possible to attempt to scroll through all the generated code and output to understand what analysis was done. Free credits refresh on a weekly basis. Those features make me likely to return to it for simple, real work in the future.
 - **Heureka**: I like interface of creating a project, writing a prompt, and then having a batch job run in the background once there was heavy work to complete. The output files were well-organized.
 - **K-Dense**: The performance without context guiding the modeling strategy is worth mentioning. The [scientific skills](https://github.com/K-Dense-AI/claude-scientific-skills) are available outside the web app. The output files were well-organized. I especially liked the hierarchical layout and ability to easily download everything in batch.
 - **Kosmos**: It blasts analyses at your problem. The magnitude of computation dwarfs the other tools I have tried, and this can lead to secondary or tertiary explorations that are unexplored by the other tools.
 
 Constructive feedback for:
-- **Biomni**: Users cannot copy and paste long input prompts. Long inputs are treated as attachments, so the user has to break up the input into chunks of a few sentences and paste them in bit-by-bit. Users also cannot download the logs and file outputs without refreshing the page and reloading the past session.
+- **Biomni**: Users cannot copy and paste long input prompts. Long inputs are treated as attachments, so the user has to break up the input into chunks of a few sentences and paste them in bit-by-bit. Users also cannot download the logs and file outputs without refreshing the page and reloading the past session. Results for similar prompts are cached so it isn't possible to directly evaluate outputs from different backend LLMs on the same input.
 - **Heureka**: The [terms](https://heurekalabsco.github.io/terms/terms.html) concern me with respect to the language about granting the Company a license to publicly display User Content. The input prompt length limit is too short. Attempting to zip and download dozens of files in a single batch failed.
 - **K-Dense**: The interface hangs when submitting a prompt with many attached files.
 - **Kosmos**: The overall structure of a Kosmos analysis is rigid: four discoveries with a text-based report as the main deliverable. That can be restrictive for a project like this where the goal is to find the best single modeling strategy and produce the best possible predictions for an input set of compounds. It is difficult to find and download the best output `.csv` file across the multiple analyses in the report. The report references analysis tasks, but those tasks may not produce an output `.csv` file. I cannot find a way to download all the data artifacts and code generated. There are so many parallel analyses attempted, some of which are dead ends, that it feels hopeless to trace through them to understand in full what modeling was done.
