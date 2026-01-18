@@ -229,3 +229,4 @@ Note that from the initial submission on 2025-12-08 and the resubmission on 2026
 - https://github.com/hicai-zju/scitoolagent: requires local install?
 - https://github.com/allenai/codescientist
 - https://pantheonos.stanford.edu/
+- https://novix.science/
