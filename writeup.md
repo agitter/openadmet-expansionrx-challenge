@@ -95,7 +95,7 @@ In this setting, K-Dense has an advantage, narrowly per some metrics and more su
 
 Looking across all models and contexts, we can examine how adding additional context helps the AI scientists.
 In all cases it provides a benefit, often a considerable benefit.
-I did not perform detailed ablations so I cannot tell what specifically was most valuable for the predictive modeling.
+I did not perform detailed ablations, so I cannot tell what specifically was most valuable for the predictive modeling.
 Even with the additional context, Biomni lags behind the other three models.
 ![Performance by model with varying context](results/context_comparison_per_model.png)
 
@@ -110,8 +110,8 @@ After running four different AI scientists, I've accumulated some subjective tho
 Say (at least) one nice thing about:
 - **Biomni**: It is fairly open and transparent, which I value. The planning and analysis is mostly linear, even when backtracking and updating plans, which makes it possible to attempt to scroll through all the generated code and output to understand what analysis was done. Free credits refresh on a weekly basis. Those features make me likely to return to it for simple, real work in the future.
 - **Heureka**: I like interface of creating a project, writing a prompt, and then having a batch job run in the background once there was heavy work to complete. The output files were well-organized.
-- **K-Dense**: The performance without context guiding the modeling strategy is worth mentioning. The [scientific skills](https://github.com/K-Dense-AI/claude-scientific-skills) are available outside the web app. The output files were well-organized. I especially liked the hierarchical layout and ability to easily download everything in batch.
-- **Kosmos**: It blasts analyses at your problem. The magnitude of computation dwarfs the other tools I have tried, and this can lead to secondary or tertiary explorations that are unexplored by the other tools.
+- **K-Dense**: The performance without context guiding the modeling strategy is worth mentioning. The [scientific skills](https://github.com/K-Dense-AI/claude-scientific-skills) are available outside the web app. The output files were well-organized. I especially liked the hierarchical layout and ability to easily download everything in batch. For these reasons, I returned to K-Dense for a real exploratory analysis related to protein clustering after the competition and was satisfied was that result.
+- **Kosmos**: It blasts analyses at your problem. The magnitude of computation dwarfs the other tools I tried. This can lead to secondary or tertiary explorations that are not considered by the other tools.
 
 Constructive feedback for:
 - **Biomni**: Users cannot copy and paste long input prompts. Long inputs are treated as attachments, so the user has to break up the input into chunks of a few sentences and paste them in bit-by-bit. Users also cannot download the logs and file outputs without refreshing the page and reloading the past session. Results for similar prompts are cached so it isn't possible to directly evaluate outputs from different backend LLMs on the same input.
@@ -123,9 +123,9 @@ Constructive feedback for:
 So what have we learned from this exercise?
 One of the most valuable takeaways for me personally was understanding the state of the art in AI scientists.
 Reading about these tools doesn't give the same impressions as trying them yourself for some specific task, which I why I emphasized the user experience in a separate section independent of success on the scientific task.
-My [running Kosmos](https://github.com/gitter-lab/adaptyvbio-nipah/tree/main/kosmos) for the [Adaptyv Nipah Binder Competition](https://proteinbase.com/competitions/adaptyv-nipah-competition) was done in a similar spirit.
+My [Kosmos run](https://github.com/gitter-lab/adaptyvbio-nipah/tree/main/kosmos) for the [Adaptyv Nipah Binder Competition](https://proteinbase.com/competitions/adaptyv-nipah-competition) was done in a similar spirit.
 
-My assessment of these AI scientists through the competition was quite limited relative to a formal computational methods evaluation.
+My assessment of these AI scientists through the competition was quite limited relative to a formal computational method evaluation.
 I did not check for sensitivity to how the prompt was specified, run with different backend LLMs when that could be selected, assess variability in outputs given the same prompt (with one exception), ablate different aspects of the provided prompt or data, and so forth.
 The results are representative of what a typical scientist should expect from a single typical run with each tool.
 The input may skew more towards the advanced end because it is derived from an expert's prompt who develops these methods.
@@ -134,6 +134,9 @@ Some of these same tools and other tools can be run in other settings where I co
 This could have substantially affected the models they trained and their ability to match top performers on the competition.
 For these reasons, I am not drawing conclusions about one AI scientist being better than another.
 
+Based on the results on the [leaderboard](https://huggingface.co/spaces/openadmet/OpenADMET-ExpansionRx-Challenge) and the descriptions of the experts' methodologies, experts have an edge over me using these AI scientists.
+I'll wait to learn about what baseline methods the competition organizers tested and how those ranked relative to my submission before drawing other conclusions about the quality of the final Kosmos predictive model.
+
 In closing, I'm reminded of the [AI effect](https://en.wikipedia.org/wiki/AI_effect), which describes shifting expectations around AI.
 Marvin Minsky has [written](https://web.archive.org/web/20090628081048/http://www.kurzweilai.net/articles/art0100.html?printable=1) about it, but a more apt quote comes from Rodney Brooks in this 2002 [Wired article](https://www.wired.com/2002/03/everywhere/)
 > Every time we figure out a piece of it, it stops being magical; we say, 'Oh, that's just a computation,'
@@ -141,3 +144,4 @@ Marvin Minsky has [written](https://web.archive.org/web/20090628081048/http://ww
 A year ago, the types of AI scientists I tested in this competition didn't exist.
 When I first ran Biomni, I was quite impressed by its combination of planning, code generation, dynamic tool installation, backtracking upon failure, and overall design even if it didn't necessarily produce the end result I had in mind.
 Now the bar has shifted, and I'm asking if these tools can outcompete the best experts in the world.
+Being impressed by these tools does not preclude objectively evaluating them.

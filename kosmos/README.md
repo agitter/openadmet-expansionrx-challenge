@@ -48,5 +48,3 @@ Once again, each section of the report contains independent analyses so it is di
 The stacked ensemble results (discovery 2) looked especially relevant, but that task did not have a csv file with predictions as a file to download, only png images.
 I had to navigate the full output Artifacts searching for available csv files until I found `final_predictions_stacked.csv`, which may not have been the most relevant or correct file.
 The full set of artifacts are available at [Edison Scientific](https://platform.edisonscientific.com/kosmos/93b71758-d473-41e4-9a9c-85a51def7ae6).
-
-(**TODO:** make the Edison Scientific links public)

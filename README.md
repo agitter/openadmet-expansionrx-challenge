@@ -217,7 +217,7 @@ My final submission, Submission 11, was a resubmission of Kosmos prompt2 because
 It reused the metadata from `kosmos/metadata-submission2.txt`.
 Note that from the initial submission on 2025-12-08 and the resubmission on 2026-01-06 the rank decreased from 42 to 91.
 
-## Other AI co-scientists to try
+## Other AI co-scientists to consider
 - General LLMs
 - https://kiin.bio/: requires a free consultation?
 - https://www.getkepler.ai/: have to book a demo?
