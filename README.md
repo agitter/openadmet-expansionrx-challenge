@@ -1,6 +1,21 @@
 # OpenADMET + ExpansionRx Blind Challenge
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18303882.svg)](https://doi.org/10.5281/zenodo.18303882)
+
 An AI scientist-based approach to the [OpenADMET + ExpansionRx Blind Challenge](https://huggingface.co/spaces/openadmet/OpenADMET-ExpansionRx-Challenge).
 The [writeup](writeup.md) describes the full methodology and results.
+
+## Citation
+```
+@article{gitter_openadmet_2026,
+	title = {{Assessing {AI} {Scientists} on the {OpenADMET} + {ExpansionRx} {Blind} {Challenge}},
+	url = {https://github.com/agitter/openadmet-expansionrx-challenge},
+	doi = {10.5281/zenodo.18303882},
+	journal = {Zenodo},
+	author = {Gitter, Anthony},
+	month = jan,
+	year = {2026},
+}
+```
 
 ## Submissions
 ### Submission 1: K-Dense prompt1

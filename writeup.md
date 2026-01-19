@@ -1,5 +1,6 @@
 # Assessing AI Scientists on the OpenADMET + ExpansionRx Blind Challenge
 Anthony Gitter  
+Archived at https://doi.org/10.5281/zenodo.18303882
 
 ## Introduction
 A theme of 2025 was the prominence of AI (co-)scientists.
