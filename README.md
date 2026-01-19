@@ -1,5 +1,6 @@
 # OpenADMET + ExpansionRx Blind Challenge
-An AI scientist-based approach to the OpenADMET + ExpansionRx Blind Challenge.
+An AI scientist-based approach to the [OpenADMET + ExpansionRx Blind Challenge](https://huggingface.co/spaces/openadmet/OpenADMET-ExpansionRx-Challenge).
+The [writeup](writeup.md) describes the full methodology and results.
 
 ## Submissions
 ### Submission 1: K-Dense prompt1
