@@ -135,8 +135,13 @@ Some of these same tools and other tools can be run in other settings where I co
 This could have substantially affected the models they trained and their ability to match top performers on the competition.
 For these reasons, I am not drawing conclusions about one AI scientist being better than another.
 
-Based on the results on the [leaderboard](https://huggingface.co/spaces/openadmet/OpenADMET-ExpansionRx-Challenge) and the descriptions of the experts' methodologies, experts have an edge over me using these AI scientists.
-I'll wait to learn about what baseline methods the competition organizers tested and how those ranked relative to my submission before drawing other conclusions about the quality of the final Kosmos predictive model.
+Based on the final results on the [live leaderboard](https://huggingface.co/spaces/openadmet/OpenADMET-ExpansionRx-Challenge) and the descriptions of the experts' methodologies, experts have an edge over me using these AI scientists.
+The [final challenge results](https://openadmet.ghost.io/the-openadmet-expansionrx-blind-challenge-has-come-to-an-end/) confirmed that.
+The top submission from user pebble had macro-averaged relative absolute error (MA-RAE) of 0.5113 ± 0.0070.
+My submission had MA-RAE of 0.7015 ± 0.0085 and ranked 61 of 103 valid submissions.
+That is comparable to its final MA-RAE in the live leaderboard of 0.68 ± 0.03, where it ranked 143 because submissions with invalid Hugging Face usernames and lacking model reports were ranked.
+For additional context, the model reports from users [rez3vil](https://github.com/rez3vil/OpenADMET-ExpansionRx-Challenge.git) and [riemann](https://docs.google.com/document/d/1N_huCHcjGN2OpioMyZBE3Pi5LRhVJoG2t3CFkqIHy50/edit?usp=sharing), who ranked directly above and below my submission, show other methodologies that yield similar performance.
+It will still be informative to learn about the performance of any baseline methods the competition organizers tested and how those performed relative to my submission.
 
 In closing, I'm reminded of the [AI effect](https://en.wikipedia.org/wiki/AI_effect), which describes shifting expectations around AI.
 Marvin Minsky has [written](https://web.archive.org/web/20090628081048/http://www.kurzweilai.net/articles/art0100.html?printable=1) about it, but a more apt quote comes from Rodney Brooks in this 2002 [Wired article](https://www.wired.com/2002/03/everywhere/)
