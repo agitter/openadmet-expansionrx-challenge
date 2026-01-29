@@ -27,7 +27,7 @@ I selected four AI scientists:
 - [K-Dense](https://k-dense.ai/) ([manuscript](https://arxiv.org/abs/2508.07043))
 - [Kosmos](https://platform.edisonscientific.com/) ([manuscript](https://arxiv.org/abs/2511.02824))
 
-These were picked from a non-exhaustive [list of candidates](https://github.com/agitter/openadmet-expansionrx-challenge/tree/main?tab=readme-ov-file#other-ai-co-scientists-to-try) I compiled based on those I already knew about and a [tweet](https://x.com/rkosai/status/1973850436848525409) from the Potato CTO.
+These were picked from a non-exhaustive [list of candidates](https://github.com/agitter/openadmet-expansionrx-challenge/tree/main?tab=readme-ov-file#other-ai-co-scientists-to-consider) I compiled based on those I already knew about and a [tweet](https://x.com/rkosai/status/1973850436848525409) from the Potato CTO.
 I only considered tools with a web interface that I could sign up for without talking to a sales team and that would provide free trial credits.
 I looked into [Potato](https://www.potato.ai/), but it was not yet available.
 I also ran [Gemini 3 Pro](https://gemini.google.com/).
