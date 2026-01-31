@@ -249,3 +249,12 @@ Note that from the initial submission on 2025-12-08 and the resubmission on 2026
 - https://thedrylab.com/
 - https://github.com/SakanaAI/AI-Scientist
 - https://github.com/bio-xyz/BioAgents
+- https://www.litefold.ai/: contact form required for access
+- https://www.ascentbio.ai/
+- https://scispace.com/biomedical
+- https://pipette.bio/: contact form required for access
+- https://github.com/InnovativeBioresearch/INNBCAgent
+- https://www.cheiron.bio/
+- https://thedrylab.com/
+
+Thanks to [these](https://x.com/jermdemo/status/2016894814504309206) [lists](https://x.com/rkosai/status/1973850436848525409) for suggestions.
