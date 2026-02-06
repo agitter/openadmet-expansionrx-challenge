@@ -142,6 +142,9 @@ My submission had MA-RAE of 0.7015 ± 0.0085 and ranked 61 of 103 valid submissi
 That is comparable to its final MA-RAE in the live leaderboard of 0.68 ± 0.03, where it ranked 143 because submissions with invalid Hugging Face usernames and lacking model reports were ranked.
 For additional context, the model reports from users [rez3vil](https://github.com/rez3vil/OpenADMET-ExpansionRx-Challenge.git) and [riemann](https://docs.google.com/document/d/1N_huCHcjGN2OpioMyZBE3Pi5LRhVJoG2t3CFkqIHy50/edit?usp=sharing), who ranked directly above and below my submission, show other methodologies that yield similar performance.
 It will still be informative to learn about the performance of any baseline methods the competition organizers tested and how those performed relative to my submission.
+An important difference in my approach versus that of the top performers is that I only gave the AI scientists the competition data to build their ADMET models.
+In the organizer's [lessons learned post](https://openadmet.ghost.io/lessons-learned-from-the-openadmet-expansionrx-blind-challenge/), they point out "4 of the top 5 participants also utilized proprietary data".
+The AI scientists could have searched for and downloaded external public data, like many of the top 20 participants did, but had no way to include proprietary data.
 
 In closing, I'm reminded of the [AI effect](https://en.wikipedia.org/wiki/AI_effect), which describes shifting expectations around AI.
 Marvin Minsky has [written](https://web.archive.org/web/20090628081048/http://www.kurzweilai.net/articles/art0100.html?printable=1) about it, but a more apt quote comes from Rodney Brooks in this 2002 [Wired article](https://www.wired.com/2002/03/everywhere/)
