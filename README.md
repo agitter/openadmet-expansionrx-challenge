@@ -261,5 +261,6 @@ Note that from the initial submission on 2025-12-08 and the resubmission on 2026
 - https://autodiscovery.allen.ai/
 - https://www.celltype.com/cli
 - https://www.thinktica.com/
+- https://www.noah.bio/
 
 Thanks to [these](https://x.com/jermdemo/status/2016894814504309206) [lists](https://x.com/rkosai/status/1973850436848525409) for suggestions.
