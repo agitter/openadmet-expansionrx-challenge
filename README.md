@@ -7,7 +7,7 @@ The [writeup](writeup.md) describes the full methodology and results.
 ## Citation
 ```
 @article{gitter_openadmet_2026,
-	title = {{Assessing {AI} {Scientists} on the {OpenADMET} + {ExpansionRx} {Blind} {Challenge}},
+	title = {Assessing {AI} {Scientists} on the {OpenADMET} + {ExpansionRx} {Blind} {Challenge}},
 	url = {https://github.com/agitter/openadmet-expansionrx-challenge},
 	doi = {10.5281/zenodo.18303882},
 	journal = {Zenodo},
