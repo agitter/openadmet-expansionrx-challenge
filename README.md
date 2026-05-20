@@ -239,7 +239,7 @@ Note that from the initial submission on 2025-12-08 and the resubmission on 2026
 - https://app.superbio.ai/
 - https://www.cambercloud.com/
 - https://github.com/zaixizhang/STELLA: requires local install?
-- [Google's AI co-scientist](https://research.google/blog/accelerating-scientific-breakthroughs-with-an-ai-co-scientist/): [Trusted Tester Program](https://docs.google.com/forms/d/e/1FAIpQLSdvw_8IPrc8O7ZM8FKF46i8BnOYMeSeyLeBNiuk_yGWIlnxYA/closedform) is closed
+- [Google's AI co-scientist](https://research.google/blog/accelerating-scientific-breakthroughs-with-an-ai-co-scientist/): [Trusted Tester Program](https://docs.google.com/forms/d/e/1FAIpQLSdvw_8IPrc8O7ZM8FKF46i8BnOYMeSeyLeBNiuk_yGWIlnxYA/closedform) is closed, [Gemini for Science](https://labs.google.com/science/interested/) requires approval
 - https://aiscientist.tools/
 - https://github.com/Alistair-Turcan/TusoAI: requires local install?
 - https://github.com/hicai-zju/scitoolagent: requires local install?
