@@ -269,5 +269,6 @@ Note that from the initial submission on 2025-12-08 and the resubmission on 2026
 - [Microsoft Discovery](https://azure.microsoft.com/en-us/solutions/discovery/)
 - https://deeporigin.com/balto-ai-assistant-for-drug-discovery/
 - [Claude Science](https://claude.com/product/claude-science)
+- [Faraday](https://inherentlabs.ai/research/training-to-replicate)
 
 Thanks to [these](https://x.com/jermdemo/status/2016894814504309206) [lists](https://x.com/rkosai/status/1973850436848525409) for suggestions.
