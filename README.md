@@ -263,12 +263,13 @@ Note that from the initial submission on 2025-12-08 and the resubmission on 2026
 - https://www.thinktica.com/
 - https://www.noah.bio/
 - https://www.clyte.tech/sop-ai
-- [GPT‑Rosalind](https://openai.com/index/introducing-gpt-rosalind/)
+- [GPT‑Rosalind](https://openai.com/index/introducing-gpt-rosalind/) and [Rosalind Workbench](https://developers.openai.com/blog/rosalind-workbench)
 - https://seqera.io/platform/co-scientist/
 - https://hermes-agent.nousresearch.com/
 - [Microsoft Discovery](https://azure.microsoft.com/en-us/solutions/discovery/)
 - https://deeporigin.com/balto-ai-assistant-for-drug-discovery/
 - [Claude Science](https://claude.com/product/claude-science)
 - [Faraday](https://inherentlabs.ai/research/training-to-replicate)
+- [Rao](https://tuva.ai/)
 
 Thanks to [these](https://x.com/jermdemo/status/2016894814504309206) [lists](https://x.com/rkosai/status/1973850436848525409) for suggestions.
